@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 8 Physics Ch-9: ELECTRICAL CONDUCTIVITY OF LIQUIDS (ద్రవాల విద్యుత్ వాహకత) | Jacob Gapp School, Paladugu</title>
+  <!-- Tailwind CSS CDN -->
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wSC4kdMxNQX0ozHn9K1aQhhKxCsn9vrcCD2mV7WxwBioemAB34BMysCNiSo03F1qkop1diwE0HF6HYgvjDOJn91__0hS0sIo1pFofzj1gYreyTbupuHMNaltuTpKhWz4ysqlAdxeXZpdaZTaPwlIi6jASv3AkyCJmCg6lnx1imD8oYfv1eOOrgmNwUf2Vxrlc2pMvw169m898RDqDQsJ5fpPVrYEtwmvKSwHUAllYLQZo7cprRel3Jv2Oh-wHY0tf7wErg2tyGyVvspYbarxW8mtKK4f3nDgRERYOMqfNcVblbJ94nhvBwaA6qj88rOOvgsSsyiO4iNeJSB6Esq7UATOOViqFxLnZYB4YiBIAwEiW8TK9tI-as-9DVJ7iUrNmznqntrv2ocBuonRCS75Pw" charset="UTF-8"></script><script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter & Noto Sans Telugu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Telugu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Telugu', 'sans-serif'],
+            telugu: ['Noto Sans Telugu', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; font-size: 17px; }
+    body { font-family: 'Inter', 'Noto Sans Telugu', sans-serif; line-height: 1.8; overflow-x: hidden; overflow-y: auto !important; }
+    .telugu-font { font-family: 'Noto Sans Telugu', sans-serif; line-height: 1.85; }
+
+    /* Non-blocking Elegant Background Watermark */
+    .watermark-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none !important;
+      z-index: 1;
+      opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(14, 116, 144, 0.45) 0px,
+        rgba(14, 116, 144, 0.45) 1.5px,
+        transparent 1.5px,
+        transparent 280px
+      );
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
+      overflow: hidden;
+      user-select: none;
+    }
+    .watermark-text {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #082f49;
+      transform: rotate(-30deg);
+      white-space: nowrap;
+      margin: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      pointer-events: none !important;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #38bdf8;
+      border-radius: 9999px;
+    }
+    /* Font sizing */
+    body.font-sm { font-size: 15px; }
+    body.font-md { font-size: 17px; }
+    body.font-lg { font-size: 19px; }
+    body.font-xl { font-size: 21px; }
+  </style>
+</head>
+<body class="bg-sky-50/20 text-slate-800 antialiased min-h-screen flex flex-col font-md selection:bg-sky-100 selection:text-sky-900">
+
+  <!-- ==================== MANDATORY ADMISSION GATE MODAL ==================== -->
+  <div id="admissionModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-4 border-sky-600 space-y-6">
+      <div class="text-center space-y-2">
+        <div class="w-14 h-14 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-2xl mx-auto shadow-md">
+          <i class="fa-solid fa-graduation-cap text-amber-200"></i>
+        </div>
+        <span class="text-xs font-black uppercase text-sky-700 tracking-wider">JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+        <h3 class="text-2xl font-black text-slate-900">Student Portal Entry Gate</h3>
+        <p class="text-xs text-slate-600 font-semibold">Please enter your official student credentials to access Chapter 9: Electrical Conductivity of Liquids.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-black uppercase text-slate-700 mb-1">Student Full Name (విద్యార్థి పేరు):</label>
+          <input type="text" id="modalStudentName" placeholder="e.g. Bala Swamy / ABS"
+            class="w-full px-4 py-3 rounded-xl border-2 border-slate-300 focus:outline-none focus:border-sky-600 font-bold text-slate-800 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-black uppercase text-slate-700 mb-1">Roll Number / Admission No (రోల్ నంబర్):</label>
+          <input type="text" id="modalStudentRoll" placeholder="e.g. JGS-009"
+            class="w-full px-4 py-3 rounded-xl border-2 border-slate-300 focus:outline-none focus:border-sky-600 font-bold text-slate-800 text-sm">
+        </div>
+        <button onclick="submitAdmission()"
+          class="w-full py-3.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+          <span>Enter Portal &amp; Start Session</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="text-center text-xs text-slate-400 font-bold">
+        Curator &amp; Mentor: Bro. Balaswamy S.M (balaswamysm@gmail.com)
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== BACKGROUND WATERMARK ==================== -->
+  <div class="watermark-overlay" aria-hidden="true">
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+    <div class="watermark-text">Bro. Balaswamy S.M • JACOB GAPP SCHOOL, PALADUGU, TELANGANA</div>
+  </div>
+
+  <!-- ==================== TOP INSTITUTIONAL RIBBON ==================== -->
+  <div class="relative z-20 bg-gradient-to-r from-sky-950 via-sky-900 to-sky-950 text-white text-xs sm:text-sm py-2 px-4 font-bold border-b border-sky-800 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-school text-amber-400"></i>
+        <span class="tracking-wide uppercase font-black text-amber-300">JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+      </div>
+      <div class="flex items-center gap-3 text-sky-200 text-xs font-semibold">
+        <span><i class="fa-solid fa-user-tie text-amber-400 mr-1"></i>Mentor: <strong class="text-white">Bro. Balaswamy S.M</strong></span>
+        <span>•</span>
+        <span><i class="fa-solid fa-envelope text-amber-400 mr-1"></i>balaswamysm@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STUDENT ATTENDANCE & LIVE SESSION TOOLBAR (NON-BLOCKING) ==================== -->
+  <section class="relative z-20 bg-sky-100/70 border-b-2 border-sky-300 py-3 px-4 shadow-xs">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3 w-full lg:w-auto">
+        <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center text-lg shadow-sm shrink-0">
+          <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div>
+          <span class="text-xs font-black uppercase text-sky-950 block tracking-wider">
+            Active Study Session Tracker (సక్రియ విద్యార్థి సమయ నమోదు)
+          </span>
+          <div class="text-xs text-slate-700 flex items-center gap-2">
+            <span>Student: <strong id="displayStudentName" class="text-slate-900 font-black">--</strong> (Roll: <strong id="displayStudentRoll" class="text-slate-900 font-black">--</strong>)</span>
+            <span>•</span>
+            <span>Time: <strong id="liveSessionTimer" class="font-mono text-emerald-700 font-black text-sm">00:00</strong></span>
+            <span>•</span>
+            <button onclick="openAdmissionModal()" class="text-indigo-600 underline font-bold hover:text-indigo-800 text-xs">Change Student</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Report Button -->
+      <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto justify-end">
+        <button onclick="sendReportDirect()" title="Send session details to balaswamysm@gmail.com"
+          class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-xs transition flex items-center gap-1.5">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Email Report to balaswamysm@gmail.com</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HEADER & TOP INDEX NAVIGATION ==================== -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b-2 border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand & Title -->
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-cyan-700 flex items-center justify-center text-white shadow-md">
+            <i class="fa-solid fa-bolt text-2xl"></i>
+          </div>
+          <div>
+            <h1 class="font-black text-lg sm:text-2xl text-slate-900 leading-tight">Class 8: ELECTRICAL CONDUCTIVITY OF LIQUIDS</h1>
+            <p class="text-xs sm:text-sm text-sky-700 font-extrabold">SCERT Telangana Chapter 9 (Pages 119–130) • Bro. Balaswamy S.M Portal</p>
+          </div>
+        </div>
+
+        <!-- Text Resizer Controls -->
+        <div class="flex items-center gap-2 sm:gap-4">
+          <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200 text-xs font-black">
+            <button onclick="changeFontSize('sm')" title="Small Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A-</button>
+            <button onclick="changeFontSize('md')" title="Normal Text" class="px-2.5 py-1 rounded bg-white shadow-xs text-sky-700">A</button>
+            <button onclick="changeFontSize('lg')" title="Large Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A+</button>
+            <button onclick="changeFontSize('xl')" title="Extra Large Text" class="px-2.5 py-1 rounded hover:bg-white text-slate-700">A++</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Anchor Navigation Bar -->
+      <nav class="flex items-center gap-2 py-2.5 overflow-x-auto custom-scrollbar text-xs sm:text-sm font-extrabold whitespace-nowrap border-t border-slate-200">
+        <a href="#overview" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-slate-800 transition">
+          <i class="fa-solid fa-compass mr-1.5 text-sky-600"></i>Overview
+        </a>
+        <a href="#pageByPage" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-slate-800 transition">
+          <i class="fa-solid fa-book-open mr-1.5 text-sky-600"></i>Pages 119-129 Sections
+        </a>
+        <a href="#eightyPoints" class="px-3.5 py-1.5 rounded-xl bg-sky-600 text-white hover:bg-sky-700 transition shadow-xs">
+          <i class="fa-solid fa-list-ol mr-1.5 text-amber-200"></i>80 Key Concepts (Telugu)
+        </a>
+        <a href="#eightyGlossary" class="px-3.5 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 transition border border-emerald-300">
+          <i class="fa-solid fa-spell-check mr-1.5 text-emerald-600"></i>80 Glossary Terms &amp; Sentences
+        </a>
+        <a href="#improveYourLearning" class="px-3.5 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 transition border border-amber-300">
+          <i class="fa-solid fa-clipboard-question mr-1.5 text-amber-600"></i>Improve Your Learning (Full)
+        </a>
+        <a href="#suggestedExperiments" class="px-3.5 py-1.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-900 transition border border-sky-300">
+          <i class="fa-solid fa-flask-vial mr-1.5 text-sky-600"></i>Suggested Experiments
+        </a>
+        <a href="#projectWorks" class="px-3.5 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-900 transition border border-teal-300">
+          <i class="fa-solid fa-diagram-project mr-1.5 text-teal-600"></i>Project Works
+        </a>
+        <a href="#electroplatingMarvel" class="px-3.5 py-1.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-900 transition border border-rose-300">
+          <i class="fa-solid fa-atom mr-1.5 text-rose-600"></i>Voltaic Cell &amp; Electroplating
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+  <main class="relative z-10 flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+    <!-- HERO SECTION BANNER -->
+    <section id="overview" class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-sky-950 via-slate-900 to-sky-950 text-white p-6 sm:p-10 shadow-2xl border-2 border-sky-600">
+      <div class="relative z-10 max-w-4xl space-y-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-black bg-amber-400 text-slate-950 shadow">
+            <i class="fa-solid fa-award"></i> JACOB GAPP SCHOOL, PALADUGU
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-extrabold bg-sky-500/30 text-sky-100 border border-sky-400/30">
+            <i class="fa-solid fa-user-check"></i> Curator: Bro. Balaswamy S.M
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+            <i class="fa-solid fa-lock-open"></i> Full Document Unlocked
+          </span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Physical Sciences - Chapter 9: ELECTRICAL CONDUCTIVITY OF LIQUIDS <span class="text-amber-300">(ద్రవాల విద్యుత్ వాహకత)</span>
+        </h2>
+        <p class="text-base sm:text-lg text-sky-100 leading-relaxed font-normal">
+          An interactive, mobile-friendly bilingual master learning portal covering SCERT Class 8 Chapter 9 (Pages 119–130). Master electrical conductivity in solids and liquids, LED testers, distilled water vs. salt/acid solutions, chemical effects of electric current (potato test), Luigi Galvani and Alessandro Volta's historic voltaic cells, electrolysis, copper electroplating, industrial uses, 80 master concepts with Telugu explanations, 80 glossary terms, all textbook exercises solved, and laboratory experiment reports.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEARCH & FILTER TOOLBAR -->
+    <div class="bg-white rounded-2xl p-5 shadow-sm border-2 border-slate-200 flex flex-col md:flex-row gap-4 items-center justify-between">
+      <div class="relative w-full md:w-96">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400 text-base"></i>
+        <input type="text" id="universalSearchInput" onkeyup="filterContent()" placeholder="Search conductivity, liquids, electroplating, Telugu words..."
+          class="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:border-sky-600 text-base font-semibold">
+      </div>
+      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto justify-end text-xs sm:text-sm font-bold text-slate-700">
+        <span>Language Display:</span>
+        <button onclick="toggleLang('both')" id="btnBoth" class="px-3.5 py-2 rounded-xl bg-sky-600 text-white shadow-xs">English + తెలుగు</button>
+        <button onclick="toggleLang('en')" id="btnEn" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800">English Only</button>
+        <button onclick="toggleLang('te')" id="btnTe" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800">తెలుగు మాత్రమే</button>
+      </div>
+    </div>
+
+    <!-- ==================== SECTION 1: DETAILED PAGE-BY-PAGE CHAPTER BREAKDOWN ==================== -->
+    <section id="pageByPage" class="space-y-8">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-book-bookmark text-sky-600"></i>
+          Exhaustive Page-by-Page Chapter Breakdown (పేజీల వారీగా సమగ్ర పాఠ్యాంశం)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Class 8 Physical Sciences SCERT Chapter 9: Pages 119 to 129 with bilingual summaries &amp; tables.</p>
+      </div>
+
+      <!-- PAGES 119 to 129 CARDS -->
+      <div class="space-y-6">
+
+        <!-- Page 119 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 119: Introduction &amp; Activity-1 (Solid Conductivity Test)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Class 8 SCERT Chapter 9</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (119.1):</strong>
+              <p>Newspapers often report farmers getting electric shocks starting well water pumps with wet hands, or warnings about touching immersed electric heaters. How does current flow through water?</p>
+              <p><strong>Activity-1:</strong> Testing solid conductivity using a dry cell, torch bulb/LED, switch, and objects (nail, paper strip, chalk, straw, plastic, paper clip, eraser, pencil graphite). Metals conduct; non-metals do not.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (119.1):</strong>
+              <p>తడి చేతులతో వాటర్ పంపుల స్టార్టర్లు ముట్టుకోవడం వల్ల రైతులు విద్యుత్ షాక్‌లకు గురికావడం వార్తల్లో చూస్తుంటాం. నీటి ద్వారా విద్యుత్ ఎలా ప్రవహిస్తుంది?</p>
+              <p><strong>కృత్యం-1:</strong> డ్రై సెల్, ఎల్‌ఈడీ బల్బు మరియు వివిధ వస్తువులను (ఇనుప గుండుసూది, రబ్బరు ఎరేజర్, పెన్సిల్ గ్రాఫైట్) ఉంచి విద్యుత్ వాహకతను పరీక్షించడం. లోహాలు మంచి వాహకాలుగా పనిచేస్తాయి.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 120 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 120: Table-1 Solid Conductivity &amp; Activity-2 (Liquid Tester)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Good vs. Bad Conductors</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (120.1):</strong>
+              <p>Good conductors allow electric current to pass through easily; poor conductors (insulators) do not. Do liquids conduct electricity?</p>
+              <p><strong>Activity-2:</strong> Constructing a liquid tester using an injection bottle rubber cap, two metal pins spaced ~2 mm apart, dry cell, and LED indicator.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (120.1):</strong>
+              <p>విద్యుత్ ప్రవాహాన్ని సులభంగా అనుమతించే వాటిని 'మంచి వాహకాలు' అని, అనుమతించని వాటిని 'చెడ్డ వాహకాలు' (బంధకాలు) అంటారు. మరి ద్రవాలు విద్యుత్‌ను ప్రసరింపజేస్తాయా?</p>
+              <p><strong>కృత్యం-2:</strong> ఇంజెక్షన్ బాటిల్ రబ్బరు మూతకు రెండు మెటల్ పిన్‌లను 2 మి.మీ అంతరంతో అమర్చి LED టెస్టర్‌ను తయారుచేయడం.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 121 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 121: Table 2 - Liquid Conductivity Results
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Distilled Water vs. Lemon Juice</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (121.1):</strong>
+              <p>Testing liquids: Distilled water (No glow - bad conductor), Drinking water (Glows - good conductor), Coconut oil (No glow), Lemon juice (Glows - good conductor), Vinegar, Kerosene, Sugar solution.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (121.1):</strong>
+              <p><strong>పట్టిక 2 ఫలితాలు:</strong> స్వేదన జలం (Distilled water) LED వెలిగించదు (చెడ్డ వాహకం). తాగునీరు మరియు నిమ్మరసం LED ని వెలిగిస్తాయి (మంచి వాహకాలు). నూనె, కెరోసిన్ విద్యుత్‌ను ప్రసరింపజేయవు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 122 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 122: Why Use LED in Testers? (Long vs Short Leads)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">LED Indicator Sensitivity</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (122.1):</strong>
+              <p><strong>Why LED?</strong> LEDs glow even when a very weak electric current passes through the circuit, making them sensitive indicators in appliances like mobile phones and TVs.</p>
+              <p><strong>Polarity:</strong> LEDs have two leads; the longer lead connects to the positive battery terminal and the shorter lead to the negative terminal.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (122.1):</strong>
+              <p><strong>LED ఎందుకు వాడాలి?</strong> చాలా బలహీనమైన విద్యుత్ ప్రవహించినా LED వెలుగుతుంది. అందుకే మొబైల్ ఫోన్లు, టీవీలలో ఇండికేటర్‌గా దీనిని వాడతారు.</p>
+              <p><strong>ధృవాలు:</strong> LED కి రెండు తీగలు (Leads) ఉంటాయి. పొడవైన తీగను బ్యాటరీ ధనాత్మక (+) ధృవానికి, చిన్నదానిని రుణాత్మక (-) ధృవానికి కలపాలి.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 123 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 123: Activity-3 - Conductivity of Electrolytes &amp; Wet Hands Warning
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Salt, Acid, and Base Solutions</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (123.1):</strong>
+              <p>Distilled water is a bad conductor. Dissolving common salt, copper sulphate, or lemon acid turns it into a good conductor.</p>
+              <p>Natural water from taps, wells, and rivers contains dissolved minerals and salts, making it a good conductor. This explains why touching electrical switches with wet hands causes severe shocks.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (123.1):</strong>
+              <p>స్వేదన జలం బంధకం. అందులో ఉప్పు, కాపర్ సల్ఫేట్ లేదా నిమ్మరసం కలిపితే అది మంచి వాహకంగా మారుతుంది.</p>
+              <p>బావులు, కుళాయిల నీటిలో లవణాలు కరిగి ఉండటం వల్ల అది విద్యుత్‌ను ప్రసరింపజేస్తుంది. అందుకే తడి చేతులతో ఎప్పుడూ స్విచ్‌లు ముట్టకూడదు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 124 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 124: Activity-4 - Chemical Effect on Potato
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Greenish-Blue Spot at Positive Terminal</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (124.1):</strong>
+              <p><strong>Activity-4 (Potato Test):</strong> Inserting tester copper wires into a cut potato and leaving them for 20-30 minutes produces a greenish-blue chemical spot around the wire connected to the positive battery terminal.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (124.1):</strong>
+              <p><strong>కృత్యం-4 (బంగాళాదుంప పరీక్ష):</strong> కట్ చేసిన బంగాళాదుంపలో టెస్టర్ తీగలను గుచ్చి 20-30 నిమిషాలు ఉంచితే, బ్యాటరీ ధనాత్మక (+) ధృవానికి కలిపిన తీగ చుట్టూ ఆకుపచ్చని-నీలి రంగు మచ్చ ఏర్పడుతుంది. ఇది విద్యుత్ వల్ల జరిగే రసాయన మార్పు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 125 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 125: Luigi Galvani &amp; Alessandro Volta (History of the First Cell)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Voltaic Cell Invention (1800)</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (125.1):</strong>
+              <p><strong>History of Cells:</strong> In 1780, Luigi Galvani observed twitching in frog's legs touched by metal. Alessandro Volta later proved electricity is generated by placing two different metals in liquid solutions, inventing the first voltaic cell in 1800 using zinc and copper plates in sulphuric acid.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (125.1):</strong>
+              <p><strong>మొదటి విద్యుత్ ఘటం చరిత్ర:</strong> 1780లో లూయిగి గల్వానీ కప్ప కాళ్ళతో ప్రయోగాలు చేశారు. అలెగ్జాండ్రో వోల్టా దీనిని మరింత పరిశోధించి, రెండు విభిన్న లోహాలను ఆమ్ల ద్రావణంలో ఉంచితే విద్యుత్ పుడుతుందని నిరూపించి 1800లో మొదటి 'వోల్టా ఘటాన్ని' తయారుచేశారు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 126 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 126: Activity-5 (Make Your Own Cell) &amp; Electrolysis Definition
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Zinc &amp; Copper Electrodes</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (126.1):</strong>
+              <p><strong>Activity-5:</strong> Making a voltaic cell using injection bottles, copper wire, zinc strips (from old dry cells), and dilute sulphuric acid. Zinc dissolves, copper forms bubbles, converting chemical energy into electrical energy via electrolysis.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (126.1):</strong>
+              <p><strong>కృత్యం-5 (సొంత బ్యాటరీ తయారీ):</strong> ఇంజెక్షన్ బాటిల్స్‌లో రాగి తీగ, జింక్ రేకులు మరియు విలీన సల్ఫ్యూరిక్ ఆమ్లం ఉంచి సొంత సెల్ తయారుచేయడం. జింక్ కరిగి రాగిపై బుడగలు ఏర్పడి రసాయన శక్తి విద్యుత్ శక్తిగా మారుతుంది.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 127 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 127: Lab Activity - Electroplating an Iron Key with Copper (Fig-6)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Copper Sulphate Electrolyte</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (127.1):</strong>
+              <p><strong>Lab Activity (Electroplating):</strong> Dissolving copper sulphate crystals with a few drops of sulphuric acid. Connecting an iron key to the negative battery terminal and a copper plate to the positive terminal. Passing current deposits a shiny brown copper layer on the key.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-slate-200 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (127.1):</strong>
+              <p><strong>ప్రయోగశాల కృత్యం (ఎలక్ట్రోప్లేటింగ్):</strong> కాపర్ సల్ఫేట్ ద్రావణంలో ఇనుప తాళం చెవిని రుణాత్మక (-) ధృవానికి, రాగి పలకను ధనాత్మక (+) ధృవానికి కలిపి విద్యుత్ పంపిస్తే తాళం చెవిపై మెరిసే గోధుమ రంగు రాగి పూత ఏర్పడుతుంది.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 128 -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 128: Requirements for Electroplating &amp; Industrial Uses (Figs 7 &amp; 8)
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Chromium &amp; Gold Plating</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-sky-900 block font-black text-base">English Text (128.1):</strong>
+              <p><strong>Electroplating Requirements:</strong> Object must be grease-free, surface slightly rough for permanent adhesion, proper electrolyte concentration, and steady current.</p>
+              <p><strong>Uses:</strong> Chromium plating on bicycle handlebars and car parts for corrosion resistance and shine; gold/silver plating on base metals for jewelry and tableware.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-slate-200 telugu-font space-y-2 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">తెలుగు సమగ్ర వివరణ (128.1):</strong>
+              <p><strong>ఎలక్ట్రోప్లేటింగ్ నియమాలు:</strong> వస్తువుపై జిడ్డు ఉండకూడదు, ఉపరితలం గరుకుగా ఉండాలి, స్థిరమైన విద్యుత్ ప్రవాహం ఉండాలి.</p>
+              <p><strong>ఉపయోగాలు:</strong> సైకిల్ హ్యాండిల్స్ మరియు కార్ల భాగాలపై క్రోమియం పూత పూసి తుప్పు పట్టకుండా మెరుపునిస్తారు. రాగి వస్తువులపై బంగారం/వెండి పూత పూసి అందమైన ఆభరణాలు తయారుచేస్తారు.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Page 129 Summary -->
+        <article class="page-block bg-white rounded-3xl p-6 sm:p-8 shadow-sm border-2 border-slate-200 space-y-4">
+          <div class="flex flex-wrap items-center justify-between border-b pb-3 border-slate-200 gap-2">
+            <span class="font-black text-sm uppercase text-sky-800 bg-sky-50 border border-sky-200 px-3.5 py-1 rounded-full">
+              📄 Page 129: Tin Cans &amp; Galvanizing Bridge Iron (Fig-9) &amp; Summary
+            </span>
+            <span class="text-xs text-slate-400 font-bold">Review Points</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-5 leading-relaxed text-sm">
+            <div class="lang-en bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-1.5">
+              <strong class="text-sky-900 block font-black text-base">Key Summary Points:</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Processed food cans are tin-coated iron because tin is less reactive than iron.</li>
+                <li>Galvanizing iron with zinc prevents rust on bridges and automobiles.</li>
+                <li>Distilled water is a bad conductor, but salt/acid solutions conduct electricity.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-5 rounded-2xl border border-sky-100 telugu-font space-y-1.5 text-sky-950">
+              <strong class="text-sky-900 block font-black text-base">ముఖ్య సారాంశ సూత్రాలు:</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>టిన్ (టెట్రా) పూత పూసిన డబ్బాలలో ఆహార పదార్థాలు భద్రపరుస్తారు, ఎందుకంటే టిన్ ఇనుము కంటే తక్కువ క్రియాశీలకం.</li>
+                <li>ఇనుముపై జింక్ పూత పూయడాన్ని గాల్వనైజింగ్ అంటారు; ఇది వంతెనలను తుప్పు నుండి కాపాడుతుంది.</li>
+                <li>స్వేదన జలం బంధకం, కానీ ఉప్పు/ఆమ్లాల నీరు మంచి వాహకం.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: 80 MASTER KEY CONCEPTS ==================== -->
+    <section id="eightyPoints" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-slate-200 pb-3 gap-2">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+            <i class="fa-solid fa-list-check text-sky-600"></i>
+            80 Master Key Points with Long Telugu Explanations &amp; Real-Life Examples
+          </h3>
+          <p class="text-sm text-slate-500 font-semibold">80 ద్రవాల విద్యుత్ వాహకత శాస్త్రీయ అంశాలు - సమగ్ర వివరణలతో</p>
+        </div>
+        <span class="text-xs font-black bg-sky-600 text-white px-3.5 py-1.5 rounded-full self-start md:self-auto">
+          Points 1 to 80 Complete
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="eightyPointsContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: 80 GLOSSARY TERMS ==================== -->
+    <section id="eightyGlossary" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-slate-200 pb-3 gap-2">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+            <i class="fa-solid fa-book-atlas text-emerald-600"></i>
+            80 Scientific Conductivity Glossary Terms with Contextual Sentences
+          </h3>
+          <p class="text-sm text-slate-500 font-semibold">80 విద్యుత్ వాహకత శాస్త్ర పదాలు - ఆంగ్ల &amp; తెలుగు వాక్య ప్రయోగాలతో</p>
+        </div>
+        <span class="text-xs font-black bg-emerald-100 text-emerald-800 px-3.5 py-1.5 rounded-full self-start md:self-auto">
+          80 Terms &amp; Examples
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="glossaryContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: EXHAUSTIVE "IMPROVE YOUR LEARNING" EXERCISES (Pages 129-130) ==================== -->
+    <section id="improveYourLearning" class="space-y-8">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-graduation-cap text-amber-600"></i>
+          Complete "Improve Your Learning" Exercises (Pages 129–130 Solved)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Every textbook question from Reflections on Concepts, Applications, HOTs, and MCQs fully solved with AS tags.</p>
+      </div>
+
+      <!-- Part I: Reflections on Concepts -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-sky-900 bg-sky-50 border-l-4 border-sky-600 px-4 py-2 rounded-r-xl">
+          I. Reflections on Concepts (భావనలపై ప్రతిస్పందనలు - Page 129)
+        </h4>
+
+        <!-- Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Reflections on Concepts - Q1 (AS1)</span>
+            <button onclick="readAloud('Give examples for good solid conductors and liquid conductors.')" class="text-slate-400 hover:text-sky-600 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q1: Give examples for good solid conductors and liquid conductors. (AS1)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 1: మంచి ఘన వాహకాలు మరియు ద్రవ వాహకాలకు ఉదాహరణలు ఇవ్వండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>Good Solid Conductors:</strong> Copper, aluminium, iron, silver, and pencil graphite.</li>
+                <li><strong>Good Liquid Conductors:</strong> Tap water, lemon juice, salt solution, copper sulphate solution, and vinegar.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>మంచి ఘన వాహకాలు:</strong> రాగి (Copper), అల్యూమినియం, ఇనుము, వెండి మరియు పెన్సిల్ గ్రాఫైట్.</li>
+                <li><strong>మంచి ద్రవ వాహకాలు:</strong> తాగునీరు, నిమ్మరసం, ఉప్పు నీరు, కాపర్ సల్ఫేట్ ద్రావణం మరియు వెనిగర్.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Reflections on Concepts - Q2 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: Give examples for poor solid conductors and liquid conductors. (AS1)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 2: చెడ్డ ఘన వాహకాలు (బంధకాలు) మరియు ద్రవ వాహకాలకు ఉదాహరణలు ఇవ్వండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>Poor Solid Conductors (Insulators):</strong> Plastic, rubber, wood, dry paper, and glass.</li>
+                <li><strong>Poor Liquid Conductors:</strong> Distilled water, coconut oil, kerosene, and vegetable oil.</li>
+              </ul>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              <ul class="list-disc pl-4 space-y-1">
+                <li><strong>చెడ్డ ఘన వాహకాలు (బంధకాలు):</strong> ప్లాస్టిక్, రబ్బరు, చెక్క, పొడి కాగితం మరియు గాజు.</li>
+                <li><strong>చెడ్డ ద్రవ వాహకాలు:</strong> స్వేదన జలం (Distilled water), కొబ్బరి నూనె, కెరోసిన్ మరియు వంట నూనె.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Reflections on Concepts - Q3 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q3: Give two examples for electrolyte. (AS1)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 3: విద్యుద్విశ్లేషకానికి (Electrolyte) రెండు ఉదాహరణలు ఇవ్వండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              Two examples of electrolytes (solutions that conduct electricity and undergo chemical change):
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>Dilute Sulphuric acid ($H_2SO_4$).</li>
+                <li>Copper sulphate solution ($CuSO_4$).</li>
+              </ol>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              విద్యుద్విశ్లేషకానికి (విద్యుత్‌ను ప్రసరింపజేస్తూ రసాయన మార్పునకు గురయ్యే ద్రావణం) రెండు ఉదాహరణలు:
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>విలీన సల్ఫ్యూరిక్ ఆమ్లం ($H_2SO_4$).</li>
+                <li>కాపర్ సల్ఫేట్ ద్రావణం ($CuSO_4$).</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Reflections on Concepts - Q4 (AS5)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q4: Draw the diagram of Electrolytic cell and explain. (AS5)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 4: విద్యుద్విశ్లేషణ ఘటం (Electrolytic cell) చిత్రాన్ని గీసి వివరించండి.</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              <div class="bg-white p-3 rounded-xl border border-slate-200 text-center my-2">
+                <svg viewBox="0 0 280 150" class="w-full h-auto">
+                  <!-- Beaker -->
+                  <path d="M 70 30 L 70 120 Q 70 135, 85 135 L 195 135 Q 210 135, 210 120 L 210 30" fill="none" stroke="#0f172a" stroke-width="3"/>
+                  <!-- Electrolyte Solution -->
+                  <path d="M 72 60 L 208 60 L 208 120 Q 208 133, 195 133 L 85 133 Q 72 133, 72 120 Z" fill="#bae6fd" opacity="0.6"/>
+                  <!-- Electrodes -->
+                  <rect x="95" y="40" width="12" height="70" fill="#64748b"/>
+                  <rect x="173" y="40" width="12" height="70" fill="#b45309"/>
+                  <text x="93" y="130" font-size="9" font-weight="bold">Anode (+)</text>
+                  <text x="171" y="130" font-size="9" font-weight="bold">Cathode (-)</text>
+                  <!-- Wires & Battery -->
+                  <line x1="101" y1="40" x2="101" y2="15" stroke="#ef4444" stroke-width="2"/>
+                  <line x1="179" y1="40" x2="179" y2="15" stroke="#3b82f6" stroke-width="2"/>
+                  <line x1="101" y1="15" x2="140" y2="15" stroke="#ef4444" stroke-width="2"/>
+                  <line x1="179" y1="15" x2="140" y2="15" stroke="#3b82f6" stroke-width="2"/>
+                  <text x="133" y="18" font-size="10" font-weight="bold">Battery</text>
+                </svg>
+              </div>
+              <p>An electrolytic cell consists of a container filled with an electrolyte solution (like copper sulphate or dilute acid) and two submerged conducting rods called <strong>electrodes</strong> connected to a battery source. When current passes, ions migrate toward oppositely charged electrodes, causing chemical deposition or gas evolution.</p>
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950 space-y-2">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              <p>విద్యుద్విశ్లేషణ ఘటంలో విద్యుద్విశ్లేషక ద్రావణం (ఉదా: కాపర్ సల్ఫేట్) ఉన్న పాత్రలో రెండు లోహపు తీగలు లేదా పలకలను (ఎలక్ట్రోడ్లు) ముంచి బాహ్య బ్యాటరీకి కలుపుతారు. విద్యుత్ ప్రసరించగానే ద్రావణంలోని అయాన్లు వ్యతిరేక ధృవాలు గల ఎలక్ట్రోడ్ల వైపు ప్రయాణించి రసాయన చర్యను జరుపుతాయి.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part II: Application of Concepts -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-sky-900 bg-sky-50 border-l-4 border-sky-600 px-4 py-2 rounded-r-xl">
+          II. Application of Concepts (భావనల అనువర్తనం - Page 130)
+        </h4>
+
+        <!-- App Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Application of Concepts - Q1 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q1: Which energy is cause for glowing of bulb in electrolytic cell? (AS1)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 1: విద్యుద్విశ్లేషణ ఘటంలో బల్బు వెలగడానికి ఏ శక్తి కారణం?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              The energy responsible for glowing the bulb/LED is <strong>Chemical energy</strong> stored within the cells/battery, which gets converted into electrical energy and subsequently into light and heat energy through the circuit.
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              విద్యుద్విశ్లేషణ ఘటంలో బల్బు లేదా LED వెలగడానికి బ్యాటరీలో నిక్షిప్తమై ఉన్న <strong>రసాయన శక్తి (Chemical energy)</strong> కారణం. ఈ రసాయన శక్తి విద్యుత్ శక్తిగా, తద్వారా కాంతి శక్తిగా మారుతుంది.
+            </div>
+          </div>
+        </div>
+
+        <!-- App Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Application of Concepts - Q2 (AS1)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: What do you add to distilled water for making it to conduct electricity? (AS1)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 2: స్వేదన జలం (Distilled water) విద్యుత్‌ను ప్రసరింపజేసేలా చేయడానికి ఏమి కలపాలి?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              To make distilled water conduct electricity, we can add soluble ionic compounds such as <strong>common salt (sodium chloride)</strong>, <strong>lemon juice (citric acid)</strong>, or <strong>dilute sulphuric acid</strong>. These substances introduce free ions that carry electric current through the water.
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              స్వేదన జలం విద్యుత్‌ను ప్రసరింపజేసేలా చేయడానికి అందులో <strong>సాధారణ ఉప్పు (సోడియం క్లోరైడ్)</strong>, <strong>నిమ్మరసం (ఆమ్లం)</strong> లేదా విలీన సల్ఫ్యూరిక్ ఆమ్లాన్ని కలపాలి. ఇవి నీటిలో స్వేచ్ఛా అయాన్లను ఏర్పరచి విద్యుత్ ప్రవాహానికి తోడ్పడతాయి.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part III: Higher Order Thinking Questions (HOTs) -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-sky-900 bg-sky-50 border-l-4 border-sky-600 px-4 py-2 rounded-r-xl">
+          III. Higher Order Thinking Questions (HOTs - Page 130)
+        </h4>
+
+        <!-- HOTs Q1 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">HOTs - Q1 (AS3)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">
+            Q1: If the key is to be coated with aluminium instead of copper, what changes do we need to make in the experiment of coating on iron key with copper? (AS3)
+          </h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 1: ఇనుప తాళం చెవిపై రాగికి బదులుగా అల్యూమినియం పూత పూయాలంటే, కాపర్ ఎలక్ట్రోప్లేటింగ్ ప్రయోగంలో ఏ మార్పులు చేయాలి?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              To coat an iron key with aluminium instead of copper:
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>Replace the pure copper plate anode with a <strong>pure aluminium plate</strong> connected to the positive terminal of the battery.</li>
+                <li>Replace the copper sulphate electrolyte solution with a soluble <strong>aluminium salt solution</strong> (such as aluminium sulphate or aluminium chloride).</li>
+              }
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950">
+              <strong class="text-sky-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              ఇనుప తాళం చెవిపై రాగికి బదులుగా అల్యూమినియం పూత పూయడానికి:
+              <ol class="list-decimal pl-4 space-y-1 mt-1">
+                <li>ధనాత్మక (+) ధృవానికి కలిపిన రాగి పలక స్థానంలో <strong>అల్యూమినియం పలకను</strong> అమర్చాలి.</li>
+                <li>కాపర్ సల్ఫేట్ ద్రావణానికి బదులుగా <strong>అల్యూమినియం లవణ ద్రావణాన్ని</strong> (అల్యూమినియం సల్ఫేట్) విద్యుద్విశ్లేషకంగా వాడాలి.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOTs Q2 -->
+        <div class="exercise-item bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-black bg-sky-100 text-sky-900 px-3 py-1 rounded-full">HOTs - Q2 (AS2)</span>
+          </div>
+          <h5 class="text-base font-extrabold text-slate-900">Q2: Is plastic coated by the process of electroplating? Why? (AS2)</h5>
+          <p class="text-sm font-bold text-sky-700 telugu-font">ప్రశ్న 2: ప్లాస్టిక్ వస్తువులపై ఎలక్ట్రోప్లేటింగ్ పద్ధతి ద్వారా లోహపు పూత పూయవచ్చా? ఎందుకు?</p>
+
+          <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+            <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <strong class="text-slate-800 block mb-1">Answer (English):</strong>
+              No, plastic cannot be electroplated directly because <strong>plastic is an insulator (bad conductor of electricity)</strong>. Electroplating fundamentally requires electric current to flow through the cathode object to attract and deposit metal ions. However, plastic objects can be coated by first rendering their surface electrically conductive using a special chemical or graphite spray.
+            </div>
+            <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-slate-200 telugu-font text-sky-950">
+              <strong class="text-slate-900 block mb-1">సమాధానం (తెలుగు):</strong>
+              లేదు, ప్లాస్టిక్ వస్తువులపై నేరుగా ఎలక్ట్రోప్లేటింగ్ చేయడం కుదరదు. ఎందుకంటే <strong>ప్లాస్టిక్ అనేది విద్యుత్ బంధకం (చెడ్డ వాహకం)</strong>. ఎలక్ట్రోప్లేటింగ్ జరగాలంటే వస్తువు గుండా విద్యుత్ ప్రవహించాలి. అయితే ప్లాస్టిక్ ఉపరితలంపై ప్రత్యేక గ్రాఫైట్ లేదా రసాయన పూత పూసి వాహనంగా మార్చిన తర్వాత మాత్రమే పూత పూయవచ్చు.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part IV: Multiple Choice Questions (Page 130) -->
+      <div class="space-y-6">
+        <h4 class="text-lg font-black text-sky-900 bg-sky-50 border-l-4 border-sky-600 px-4 py-2 rounded-r-xl">
+          IV. Multiple Choice Questions (Page 130 Textbook MCQs)
+        </h4>
+
+        <!-- MCQ 1 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            1. Which of the following is also used in ornamentation and decoration? [ <span class="text-sky-700 font-extrabold">b</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">అలంకరణ మరియు ఆభరణాల తయారీలో ఏ పద్ధతిని ఉపయోగిస్తారు?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Electro typing</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">b) Electro plating (ఎలక్ట్రోప్లేటింగ్) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Electro printing</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Galvanizing</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Electroplating coats base metals with gold or silver to give lustrous ornamental finishes.
+          </p>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            2. Pure water is: [ <span class="text-sky-700 font-extrabold">c</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">స్వచ్ఛమైన నీరు (Pure / Distilled water) అనేది ఏమిటి?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Electric conductor</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Semi conductor</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">c) Insulator / Bad conductor (బంధకం) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Resistor</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Free of dissolved salts and acids, pure distilled water contains no free ions and acts as an insulator.
+          </p>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            3. The material which does not allow electric current to pass through it is known as: [ <span class="text-sky-700 font-extrabold">b</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">విద్యుత్ ప్రవాహాన్ని తన గుండా పోనివ్వని పదార్థాన్ని ఏమంటారు?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Electric conductor</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">b) Insulator / Bad conductor (బంధకం) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Electric resistance</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Semi conductor</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Insulators have tightly bound electrons preventing free charge movement.
+          </p>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            4. Electroplating is possible through: [ <span class="text-sky-700 font-extrabold">a</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">ఎలక్ట్రోప్లేటింగ్ దేని ద్వారా సాధ్యమవుతుంది?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">a) Electrolysis (విద్యుద్విశ్లేషణ) &#10004;</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Chemical process</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Dissolving</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">d) Filtration</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Electrolysis drives metal ions from anode to cathode through the electrolyte solution.
+          </p>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white space-y-3">
+          <p class="font-black text-sm text-slate-900">
+            5. One of the following is not an electrolyte: [ <span class="text-sky-700 font-extrabold">d</span> ]
+          </p>
+          <p class="text-xs font-semibold text-slate-500 telugu-font">కింది వాటిలో విద్యుద్విశ్లేషకం కానిది ఏది?</p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-bold">
+            <div class="p-2.5 rounded-lg border bg-slate-50">a) Sulphuric acid</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">b) Lemon juice</div>
+            <div class="p-2.5 rounded-lg border bg-slate-50">c) Tamarind juice</div>
+            <div class="p-2.5 rounded-lg border bg-emerald-100 border-emerald-500 text-emerald-950 font-black">d) Detergent solution (సాధారణంగా నాన్‌-ఎలక్ట్రోలైట్ వర్గీకరణ) &#10004;</div>
+          </div>
+          <p class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <strong>Scientific Reason:</strong> Acids and citrus fruit juices dissociate into conducting ions readily, whereas certain organic household surfactant mixtures differ in ion dissociation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: SUGGESTED EXPERIMENTS (Page 130) ==================== -->
+    <section id="suggestedExperiments" class="space-y-6">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-flask-vial text-sky-600"></i>
+          Suggested Experiments (Page 130 Lab Writeups)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Full scientific writeups: Aim, Apparatus, Procedure, Observation Table, and Conclusions.</p>
+      </div>
+
+      <!-- Experiment 1 -->
+      <article class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-slate-200 shadow-sm space-y-4">
+        <span class="text-xs font-black bg-sky-100 text-sky-900 px-3.5 py-1 rounded-full uppercase">
+          Suggested Experiment 1: Testing Electrical Conductivity of Liquids
+        </span>
+        <h4 class="text-lg font-black text-slate-900">
+          Aim: To test whether different liquids conduct electricity or not using an LED tester.
+        </h4>
+        <p class="text-sm font-bold text-sky-700 telugu-font">ఉద్దేశం: LED టెస్టర్‌ను ఉపయోగించి వివిధ ద్రవాల విద్యుత్ వాహకతను పరీక్షించుట.</p>
+
+        <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+          <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+            <p><strong>Apparatus:</strong> LED tester, dry cell, rubber bottle cap, metal pins, test liquids (distilled water, tap water, lemon juice, oil, vinegar).</p>
+            <p><strong>Procedure:</strong> Fill the rubber cap with test liquids one by one. Check if the LED glows. Wipe and dry pins between tests.</p>
+            <p><strong>Conclusion:</strong> Tap water and lemon juice conduct electricity (LED glows), whereas distilled water and oils do not conduct.</p>
+          </div>
+          <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950 space-y-2">
+            <p><strong>పరికరాలు:</strong> LED టెస్టర్, డ్రై సెల్, రబ్బరు మూత, పిన్‌లు, వివిధ పరీక్ష ద్రవాలు.</p>
+            <p><strong>విధానం:</strong> రబ్బరు మూతలో వేర్వేరు ద్రవాలను పోసి LED వెలుగుతుందో లేదో పరీక్షించాలి. ప్రతిసారి పిన్‌లను శుభ్రంగా తుడవాలి.</p>
+            <p><strong>ముగింపు:</strong> తాగునీరు మరియు నిమ్మరసం విద్యుత్‌ను ప్రసరింపజేస్తాయి, స్వేదన జలం మరియు నూనెలు ప్రసరింపజేయవు.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Experiment 2 -->
+      <article class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-slate-200 shadow-sm space-y-4">
+        <span class="text-xs font-black bg-sky-100 text-sky-900 px-3.5 py-1 rounded-full uppercase">
+          Suggested Experiment 2: Copper Electroplating on an Iron Key
+        </span>
+        <h4 class="text-lg font-black text-slate-900">
+          Aim: To coat an iron key with a layer of copper using the electroplating method.
+        </h4>
+        <p class="text-sm font-bold text-sky-700 telugu-font">ఉద్దేశం: ఎలక్ట్రోప్లేటింగ్ పద్ధతి ద్వారా ఇనుప తాళం చెవిపై రాగి పూత పూయుట.</p>
+
+        <div class="grid md:grid-cols-2 gap-4 text-sm leading-relaxed">
+          <div class="lang-en bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+            <p><strong>Apparatus:</strong> Copper sulphate crystals, dilute sulphuric acid, copper plate, iron key, battery, beaker, wires.</p>
+            <p><strong>Procedure:</strong> Prepare copper sulphate solution with a few drops of acid. Connect iron key to negative terminal and copper plate to positive terminal. Submerge in solution for 10 minutes.</p>
+            <p><strong>Conclusion:</strong> Electric current causes copper ions to migrate and deposit a shiny brown copper layer on the iron key.</p>
+          </div>
+          <div class="lang-te bg-sky-50/50 p-4 rounded-2xl border border-sky-100 telugu-font text-sky-950 space-y-2">
+            <p><strong>పరికరాలు:</strong> కాపర్ సల్ఫేట్ స్పటికాలు, ఆమ్లం, రాగి పలక, ఇనుప తాళం చెవి, బ్యాటరీ, బీకర్, తీగలు.</p>
+            <p><strong>విధానం:</strong> కాపర్ సల్ఫేట్ ద్రావణంలో తాళం చెవిని రుణాత్మక ధృవానికి, రాగి పలకను ధనాత్మక ధృవానికి కలిపి 10 నిమిషాలు ఉంచాలి.</p>
+            <p><strong>ముగింపు:</strong> విద్యుత్ ప్రవాహం వల్ల రాగి అయాన్లు తాళం చెవిపై చేరి మెరిసే రాగి పూత ఏర్పడుతుంది.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ==================== SECTION 6: SUGGESTED PROJECT WORKS (Page 130) ==================== -->
+    <section id="projectWorks" class="space-y-6">
+      <div class="border-b-2 border-slate-200 pb-3">
+        <h3 class="text-2xl sm:text-3xl font-black text-slate-900 flex items-center gap-3">
+          <i class="fa-solid fa-diagram-project text-teal-600"></i>
+          Suggested Project Works (Page 130 Class Projects)
+        </h3>
+        <p class="text-sm text-slate-500 font-semibold mt-1">Student project guides for electroplating applications and alternative liquid tester models.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <span class="text-xs font-black bg-teal-100 text-teal-900 px-3 py-1 rounded-full uppercase">Project 1</span>
+          <h4 class="font-extrabold text-base text-slate-900">Applications of Electroplating in Daily Life</h4>
+          <p class="text-xs text-sky-700 font-bold telugu-font">ప్రాజెక్ట్ 1: నిత్యజీవితంలో ఎలక్ట్రోప్లేటింగ్ అనువర్తనాలు</p>
+          <div class="text-xs text-slate-600 space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200 leading-relaxed">
+            <p><strong>Plan:</strong> Collect samples and photographs of chromium-plated bicycle parts, gold-plated jewelry, tin-plated food cans, and galvanized bridge girders. Prepare a comprehensive display report.</p>
+            <p class="telugu-font text-sky-950"><strong>తెలుగు మార్గదర్శి:</strong> సైకిల్ హ్యాండిల్స్, బంగారపు పూత నగలు, టిన్ డబ్బాలు మరియు గాల్వనైజ్డ్ వస్తువుల చిత్రాలు సేకరించి నివేదిక తయారుచేయండి.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded-3xl border-2 border-slate-200 shadow-sm space-y-3">
+          <span class="text-xs font-black bg-teal-100 text-teal-900 px-3 py-1 rounded-full uppercase">Project 2</span>
+          <h4 class="font-extrabold text-base text-slate-900">Alternative Liquid Tester Model (Beyond LED)</h4>
+          <p class="text-xs text-sky-700 font-bold telugu-font">ప్రాజెక్ట్ 2: LED కాకుండా ప్రత్యామ్నాయ ద్రవ టెస్టర్ నమూనా తయారీ</p>
+          <div class="text-xs text-slate-600 space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200 leading-relaxed">
+            <p><strong>Plan:</strong> Design a magnetic compass deflection tester or a buzzer-alarm conductivity tester using a miniature buzzer or magnetic needle wrapped in insulated copper wire coil.</p>
+            <p class="telugu-font text-sky-950"><strong>తెలుగు మార్గదర్శి:</strong> LED బల్బుకు బదులుగా అయస్కాంత సూది (కంపస్ నిడిల్) లేదా మినీ బజర్ (Buzzer) ఉపయోగించి ప్రత్యామ్నాయ వాహక టెస్టర్ నమూనాను రూపొందించండి.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 7: VOLTAIC CELL & ELECTROPLATING MARVELS ==================== -->
+    <section id="electroplatingMarvel" class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 rounded-3xl p-6 sm:p-10 border-2 border-sky-300 shadow-lg space-y-4">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-2xl shadow-md">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-sky-800 bg-sky-100 px-3 py-1 rounded-full">
+            Historical Discovery Feature
+          </span>
+          <h4 class="text-xl sm:text-2xl font-black text-slate-900">Alessandro Volta &amp; The Birth of Electrochemistry</h4>
+          <p class="text-xs sm:text-sm text-sky-800 font-bold telugu-font</p>అలెగ్జాండ్రో వోల్టా మరియు విద్యుత్ రసాయన శాస్త్ర ఆవిర్భావం</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm leading-relaxed">
+        <div class="lang-en bg-white p-5 rounded-2xl border border-sky-200 shadow-xs space-y-2">
+          <strong class="text-sky-950 block font-black text-base">English Historical Insight:</strong>
+          <p>Alessandro Volta's invention of the voltaic pile in 1800 solved the two-century quest for a stable, continuous source of electric current. By alternating disks of copper and zinc separated by brine-soaked cardboard, Volta proved that electricity is generated by chemical action between dissimilar metals and electrolytes.</p>
+          <p>This monumental breakthrough birthed electrochemistry, directly enabling the development of electrolysis and industrial electroplating, which protects millions of metal surfaces from rust and beautifies modern civilization.</p>
+        </div>
+        <div class="lang-te bg-white p-5 rounded-2xl border border-sky-200 shadow-xs telugu-font text-sky-950 space-y-2">
+          <strong class="text-sky-950 block font-black text-base">తెలుగు సమగ్ర వివరణ:</strong>
+          <p>1800 సంవత్సరంలో అలెగ్జాండ్రో వోల్టా కనిపెట్టిన 'వోల్టా ఘటం' శాస్త్ర చరిత్రలో ఒక మైలురాయి. ఉప్పునీటిలో తడిపిన అట్టముక్కలతో రాగి మరియు జింక్ డిస్కులను అమర్చి ఆయన నిరంతర విద్యుత్ ప్రవాహాన్ని సృష్టించారు.</p>
+          <p>ఈ అద్భుత ఆవిష్కరణే ఎలక్ట్రోకెమిస్ట్రీకి, ఎలక్ట్రోప్లేటింగ్ పరిశ్రమలకు పునాది వేసింది. దీని ద్వారా నేడు లోహాలపై తుప్పు పట్టకుండా రక్షించడం మరియు బంగారు పూత ఆభరణాలను తయారుచేయడం సాధ్యమవుతోంది.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FLOATING BACK TO TOP BUTTON ==================== -->
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top"
+    class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-sky-600 hover:bg-sky-700 text-white shadow-2xl flex items-center justify-center transition-all duration-300 transform translate-y-20 opacity-0 hover:scale-110">
+    <i class="fa-solid fa-arrow-up text-base"></i>
+  </button>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t-2 border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+      <div class="flex items-center justify-center gap-2 text-amber-400 font-black text-base sm:text-lg">
+        <i class="fa-solid fa-school"></i>
+        <span>JACOB GAPP SCHOOL, PALADUGU, TELANGANA</span>
+      </div>
+      <p class="text-slate-200 font-bold">Class 8 Physical Sciences - Chapter 9: ELECTRICAL CONDUCTIVITY OF LIQUIDS (ద్రవాల విద్యుత్ వాహకత) Portal</p>
+      <p class="text-slate-400">Educational Initiative curated by <strong>Bro. Balaswamy S.M</strong> for high school students | Exhaustive English &amp; Telugu Learning Architecture</p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-slate-400 text-xs pt-2">
+        <span><i class="fa-solid fa-envelope text-amber-400 mr-1.5"></i>Official Report Target: balaswamysm@gmail.com</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>Paladugu, Telangana, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT SYSTEM ==================== -->
+  <script>
+    /* =====================================================================
+       1. STUDENT TRACKING & MANDATORY ADMISSION GATE MODAL
+       ===================================================================== */
+    let currentStudent = {
+      name: "",
+      roll: "",
+      school: "JACOB GAPP SCHOOL, PALADUGU, TELANGANA",
+      startTime: Date.now(),
+      sessionSeconds: 0
+    };
+
+    let timerInterval = null;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.overflowY = 'auto';
+      document.documentElement.style.overflowY = 'auto';
+
+      checkAdmission();
+      buildEightyPoints();
+      buildGlossary();
+      initScrollSpy();
+    });
+
+    function checkAdmission() {
+      try {
+        const stored = sessionStorage.getItem('class8_conductivity_student');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed && parsed.name && parsed.roll) {
+            currentStudent.name = parsed.name;
+            currentStudent.roll = parsed.roll;
+            document.getElementById('displayStudentName').innerText = currentStudent.name;
+            document.getElementById('displayStudentRoll').innerText = currentStudent.roll;
+            document.getElementById('admissionModal').classList.add('hidden');
+            startSessionTimer();
+            return;
+          }
+        }
+      } catch(e) {}
+      openAdmissionModal();
+    }
+
+    function openAdmissionModal() {
+      document.getElementById('admissionModal').classList.remove('hidden');
+      try {
+        const stored = sessionStorage.getItem('class8_conductivity_student');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (parsed.name) document.getElementById('modalStudentName').value = parsed.name;
+          if (parsed.roll) document.getElementById('modalStudentRoll').value = parsed.roll;
+        }
+      } catch(e) {}
+    }
+
+    function submitAdmission() {
+      const name = document.getElementById('modalStudentName').value.trim();
+      const roll = document.getElementById('modalStudentRoll').value.trim();
+
+      if (!name || !roll) {
+        alert("Please enter both your Full Name and Roll Number to enter the portal.");
+        return;
+      }
+
+      currentStudent.name = name;
+      currentStudent.roll = roll;
+
+      try {
+        sessionStorage.setItem('class8_conductivity_student', JSON.stringify({
+          name: name,
+          roll: roll,
+          school: "JACOB GAPP SCHOOL, PALADUGU, TELANGANA"
+        }));
+      } catch(e) {}
+
+      document.getElementById('displayStudentName').innerText = name;
+      document.getElementById('displayStudentRoll').innerText = roll;
+      document.getElementById('admissionModal').classList.add('hidden');
+      startSessionTimer();
+    }
+
+    function startSessionTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        currentStudent.sessionSeconds++;
+        const timerElem = document.getElementById('liveSessionTimer');
+        if (timerElem) {
+          timerElem.innerText = formatDuration(currentStudent.sessionSeconds);
+        }
+      }, 1000);
+    }
+
+    function formatDuration(secs) {
+      const mins = Math.floor(secs / 60);
+      const remSecs = secs % 60;
+      return `${String(mins).padStart(2, '0')}:${String(remSecs).padStart(2, '0')}`;
+    }
+
+    function sendReportDirect() {
+      if (!currentStudent.name) {
+        openAdmissionModal();
+        return;
+      }
+      const mins = Math.floor(currentStudent.sessionSeconds / 60);
+      const secs = currentStudent.sessionSeconds % 60;
+
+      let body = `JACOB GAPP SCHOOL, PALADUGU, TELANGANA%0D%0A`;
+      body += `CLASS 8 PHYSICAL SCIENCES - CHAPTER 9: ELECTRICAL CONDUCTIVITY OF LIQUIDS%0D%0A`;
+      body += `EDUCATIONAL PORTAL - ATTENDANCE & READING TIME REPORT%0D%0A`;
+      body += `===============================================================%0D%0A`;
+      body += `Student Name : ${currentStudent.name}%0D%0A`;
+      body += `Roll Number  : ${currentStudent.roll}%0D%0A`;
+      body += `School       : JACOB GAPP SCHOOL, PALADUGU, TELANGANA%0D%0A`;
+      body += `Active Read Time : ${mins} minutes ${secs} seconds (${currentStudent.sessionSeconds} total seconds)%0D%0A`;
+      body += `Timestamp    : ${new Date().toLocaleString('en-IN')}%0D%0A`;
+      body += `Mentor / Curator : Bro. Balaswamy S.M%0D%0A`;
+      body += `===============================================================%0D%0A`;
+      body += `Status: Student completed session review of SCERT Chapter 9 (Pages 119-130).`;
+
+      const mailtoUrl = `mailto:balaswamysm@gmail.com?subject=${encodeURIComponent("Electrical Conductivity Chapter Study Attendance: " + currentStudent.name + " (Roll " + currentStudent.roll + ")")}&body=${body}`;
+      window.location.href = mailtoUrl;
+    }
+
+    function changeFontSize(size) {
+      document.body.classList.remove('font-sm', 'font-md', 'font-lg', 'font-xl');
+      if (size === 'sm') document.body.classList.add('font-sm');
+      else if (size === 'md') document.body.classList.add('font-md');
+      else if (size === 'lg') document.body.classList.add('font-lg');
+      else if (size === 'xl') document.body.classList.add('font-xl');
+    }
+
+    /* =====================================================================
+       2. 80 MASTER CONCEPTS (TELUGU LONG DESCRIPTIONS & REAL-LIFE EXAMPLES)
+       ===================================================================== */
+    const masterConceptsConductivity = [
+      { t: "Electrical Conductivity", te: "విద్యుత్ వాహకత", d: "ఒక పదార్థం తన గుండా విద్యుత్ ప్రవాహాన్ని ఎంత సులభంగా అనుమతిస్తుందో తెలిపే ధర్మాన్ని విద్యుత్ వాహకత అంటారు.", ex: "రాగి తీగ ద్వారా విద్యుత్ ప్రవహించడం." },
+      { t: "Good Conductors", te: "మంచి వాహకాలు", d: "తమ గుండా విద్యుత్ ప్రవాహాన్ని అత్యంత సులభంగా మరియు స్వేచ్ఛగా అనుమతించే పదార్థాలను మంచి వాహకాలు అంటారు.", ex: "రాగి, అల్యూమినియం, ఇనుము మరియు వెండి." },
+      { t: "Poor Conductors / Insulators", te: "చెడ్డ వాహకాలు (బంధకాలు)", d: "తమ గుండా విద్యుత్ ప్రవాహాన్ని అస్సలు అనుమతించని పదార్థాలను బంధకాలు అంటారు.", ex: "ప్లాస్టిక్, రబ్బరు, చెక్క మరియు గాజు." },
+      { t: "Liquid Conductivity", te: "ద్రవాల విద్యుత్ వాహకత", d: "కొన్ని ద్రవాలు కూడా ఘన పదార్థాల వలె తమ గుండా విద్యుత్‌ను ప్రసరింపజేస్తాయి.", ex: "ఉప్పు నీరు మరియు నిమ్మరసం గుండా విద్యుత్ ప్రవహించడం." },
+      { t: "LED Tester", te: "LED టెస్టర్", d: "చాలా బలహీనమైన విద్యుత్ ప్రవహించినా ప్రకాశవంతంగా వెలిగే డయోడ్ ఆధారిత పరీక్షా పరికరం.", ex: "ద్రవాల వాహకతను పరీక్షించడానికి వాడే LED సర్క్యూట్." },
+      { t: "Distilled Water", te: "స్వేదన జలం (Pure water)", d: "ఎటువంటి లవణాలు, ఖనిజాలు లేకుండా పూర్తిగా శుద్ధి చేయబడిన నీరు విద్యుత్ బంధకం (చెడ్డ వాహకం).", ex: "కార్ బ్యాటరీలలో వాడే స్వేదన జలం." },
+      { t: "Tap Water Conductivity", te: "తాగునీటి వాహకత", d: "బావులు, కుళాయిల నుండి వచ్చే నీటిలో లవణాలు మరియు ఖనిజాలు కరిగి ఉండటం వల్ల అది మంచి వాహకం.", ex: "ఇళ్లలో కుళాయి నీటి ద్వారా కరెంట్ షాక్ కొట్టడం." },
+      { t: "Electrolyte", te: "విద్యుద్విశ్లేషకం", d: "విద్యుత్‌ను ప్రసరింపజేస్తూ రసాయన చర్యకు గురై అయాన్లుగా విడిపోయే ద్రావణాన్ని విద్యుద్విశ్లేషకం అంటారు.", ex: "కాపర్ సల్ఫేట్ లేదా విలీన సల్ఫ్యూరిక్ ఆమ్ల ద్రావణం." },
+      { t: "Electrodes", te: "ఎలక్ట్రోడ్లు (ధృవాలు)", d: "విద్యుద్విశ్లేషక ద్రావణంలో ముంచి బాహ్య బ్యాటరీకి కలిపే లోహపు తీగలు లేదా పలకలు.", ex: "రాగి మరియు జింక్ పలకలు." },
+      { t: "Anode", te: "యానోడ్ (ధనాత్మక ఎలక్ట్రోడ్)", d: "బ్యాటరీ ధనాత్మక (+) టెర్మినల్‌కు కలిపిన ఎలక్ట్రోడ్‌ను యానోడ్ అంటారు.", ex: "కాపర్ ప్లేట్ యానోడ్‌గా పనిచేయడం." },
+      { t: "Cathode", te: "కాథోడ్ (రుణాత్మక ఎలక్ట్రోడ్)", d: "బ్యాటరీ రుణాత్మక (-) టెర్మినల్‌కు కలిపిన ఎలక్ట్రోడ్‌ను కాథోడ్ అంటారు.", ex: "ఇనుప తాళం చెవి కాథోడ్‌గా పనిచేయడం." },
+      { t: "Chemical Effect of Electric Current", te: "విద్యుత్ ప్రవాహ రసాయన ప్రభావం", d: "ద్రవాల గుండా విద్యుత్ ప్రవహించినప్పుడు జరిగే రసాయన మార్పులను విద్యుత్ రసాయన ప్రభావం అంటారు.", ex: "బంగాళాదుంపపై ఆకుపచ్చని మచ్చ ఏర్పడటం." },
+      { t: "Potato Test for Ions", te: "బంగాళాదుంప ప్రయోగం", d: "బంగాళాదుంపలో విద్యుత్ టెస్టర్ ఉంచినప్పుడు ధన ధృవం చుట్టూ రసాయన చర్య జరిగి ఆకుపచ్చ-నీలి రంగు ఏర్పడుతుంది.", ex: "బ్యాటరీ ప్లస్ టెర్మినల్ గుర్తింపు ప్రయోగం." },
+      { t: "Luigi Galvani's Discovery", te: "లూయిగి గల్వానీ ఆవిష్కరణ", d: "కప్ప కాళ్లకు లోహపు హుక్ తగిలినప్పుడు అవి కదలడాన్ని గమనించి ప్రాణ విద్యుత్‌ను కనుగొన్న శాస్త్రవేత్త.", ex: "1780లో కప్ప కాళ్ళతో జరిగిన చారిత్రక ప్రయోగం." },
+      { t: "Alessandro Volta's Cell", te: "అలెగ్జాండ్రో వోల్టా ఘటం", d: "రెండు విభిన్న లోహాలను ఆమ్లంలో ఉంచితే స్థిరమైన విద్యుత్ పుడుతుందని నిరూపించి మొదటి సెల్‌ను తయారుచేసిన శాస్త్రవేత్త.", ex: "1800లో తొలి వోల్టాయిక్ సెల్ తయారీ." },
+      { t: "Voltaic Cell Components", te: "వోల్టా ఘట భాగాలు", d: "సల్ఫ్యూరిక్ ఆమ్లంలో ముంచిన రాగి మరియు జింక్ పలకలతో కూడిన మొట్టమొదటి రసాయన విద్యుత్ ఘటం.", ex: "రసాయనిక శక్తిని విద్యుత్ శక్తిగా మార్చే పరికరం." },
+      { t: "Electrolysis", te: "విద్యుద్విశ్లేషణ", d: "విద్యుత్ ప్రవాహం ద్వారా ద్రావణాన్ని రసాయన విచ్ఛిన్నం చేసే పద్ధతి.", ex: "నీటిని ఆక్సిజన్ మరియు హైడ్రోజన్‌గా విడగొట్టడం." },
+      { t: "Electroplating", te: "ఎలక్ట్రోప్లేటింగ్ (లోహ పూత)", d: "విద్యుత్ ప్రవాహం ద్వారా ఒక లోహపు వస్తువుపై మరొక లోహపు సన్నని పొరను అద్దే పద్ధతి.", ex: "ఇనుప తాళం చెవిపై రాగి పూత పూయడం." },
+      { t: "Corrosion Resistance", te: "తుప్పు నిరోధకత", d: "తొందరగా తుప్పు పట్టే ఇనుము వంటి లోహాలపై నికెల్, క్రోమియం పూత పూసి తుప్పు నుండి కాపాడటం.", ex: "బైక్ హ్యాండిల్స్‌కు క్రోమియం ప్లేటింగ్." },
+      { t: "Chromium Plating", te: "క్రోమియం పూత", d: "మెరుస్తూ ఉండే మరియు తుప్పు పట్టని క్రోమియం లోహాన్ని వాహనాల భాగాలపై అద్దడం.", ex: "మోటార్ సైకిల్ మ్యాగ్‌వీల్స్ మరియు బంపర్లు." },
+      { t: "Gold/Silver Plating", te: "బంగారు / వెండి పూత", d: "చవకైన రాగి లేదా ఇనుప వస్తువులపై అందం కోసం బంగారం లేదా వెండి పొరను అలమర్చుట.", ex: "ఇమిటేషన్ నగల తయారీ." },
+      { t: "Tin Cans for Food", te: "టిన్ పూత పూసిన డబ్బాలు", d: "ఇనుము కంటే తక్కువ క్రియాశీలకం గల టిన్‌ను డబ్బాలపై పూత పూసి ఆహారం చెడిపోకుండా కాపాడటం.", ex: "చేపల డబ్బాలు మరియు పండ్ల రసాల టిన్‌లు." },
+      { t: "Galvanizing Iron", te: "గాల్వనైజింగ్ (జింక్ పూత)", d: "ఇనుము తుప్పు పట్టకుండా దానిపై జింక్ లోహపు పూత పూసే ప్రక్రియ.", ex: "ఇనుప వంతెనల girders పై జింక్ కోటింగ్." },
+      { t: "Wet Hands Danger", te: "తడి చేతులతో ప్రమాదం", d: "తడి చేతులతో స్విచ్‌లు ముట్టుకున్నప్పుడు లవణాల నీరు మంచి వాహకంగా మారి ప్రాణాంతక షాక్ ఇస్తుంది.", ex: "బావుల మోటార్లు ఆన్ చేసేటప్పుడు తడి చేతులు ఉండకూడదు." },
+      { t: "LED Polarity", te: "LED ధృవాలు (పెద్ద/చిన్న తీగ)", d: "ఎల్‌ఈడీకి ఉండే రెండు తీగలలో పొడవైనది ప్లస్ (+), చిన్నది మైనస్ (-) ధృవానికి కలపాలి.", ex: "సర్క్యూట్ బోర్డులో ఎల్‌ఈడీ అమర్చే విధానం." },
+      { t: "Battery Terminal Test", te: "బ్యాటరీ ధృవాల పరీక్ష", d: "తెలియని బ్యాటరీ టెర్మినల్స్‌ను బంగాళాదుంప లేదా ఎల్‌ఈడీ టెస్టర్‌తో పరీక్షించి ప్లస్, మైనస్ కనుగొనడం.", ex: "ప్యాక్ చేసిన బాక్స్ నుండి వచ్చే వైర్ల గుర్తింపు." },
+      { t: "Injection Bottle Cell", te: "ఇంజెక్షన్ బాటిల్ సెల్", d: "ఇంజెక్షన్ సీసాలలో రాగి తీగ, జింక్ రేకు మరియు ఆమ్లంతో సొంతంగా బ్యాటరీ తయారుచేయడం.", ex: "స్కూల్ సైన్స్ ఫెయిర్ ప్రయోగాలు." },
+      { t: "Common Salt Dissociation", te: "ఉప్పు నీటిలో అయాన్ల విచ్ఛిన్నం", d: "ఉప్పు నీటిలో కరిగినప్పుడు సోడియం మరియు క్లోరిన్ అయాన్‌లుగా విడిపోయి విద్యుత్‌ను మోసుకెళ్తాయి.", ex: "సముద్రపు నీరు అత్యంత వేగంగా కరెంట్ ప్రసరింపజేయడం." },
+      { t: "Acid Conductivity", te: "ఆమ్లాల వాహకత", d: "సల్ఫ్యూరిక్ లేదా హైడ్రోక్లోరిక్ ఆమ్లాలు నీటిలో హైడ్రోజన్ అయాన్లను ఇచ్చి మంచి వాహకాలుగా మారుతాయి.", ex: "ల్యాబ్‌లోని ఆమ్ల ద్రావణాల విద్యుత్ ప్రవాహం." },
+      { t: "Base Conductivity", te: "క్షారాల వాహకత", d: "సోడియం హైడ్రాక్సైడ్ వంటి క్షార ద్రావణాలు కూడా తమ గుండా విద్యుత్‌ను ప్రసరింపజేస్తాయి.", ex: "డిటర్జెంట్ మరియు సోప్ వాటర్." },
+      { t: "Current Intensity and Brightness", te: "ప్రవాహ తీవ్రత మరియు కాంతి తీవ్రత", d: "ద్రవం గుండా ప్రవహించే విద్యుత్ ప్రవాహం బలహీనంగా ఉంటే LED మసకగా, బలంగా ఉంటే ప్రకాశవంతంగా వెలుగుతుంది.", ex: "కొన్ని జ్యూస్‌లలో లైట్ తక్కువగా వెలగడం." },
+      { t: "Insulating Property of Rubber", te: "రబ్బరు బంధక గుణం", d: "రబ్బరు ఎరేజర్లు లేదా ప్లాస్టిక్ స్కేల్స్ కరెంట్‌ను ఆపడం వల్ల టెస్టర్ బల్బు వెలగదు.", ex: "ఎలక్ట్రీషియన్లు రబ్బరు గ్లౌజ్ ధరించడం." },
+      { t: "Pencil Graphite Conductor", te: "పెన్సిల్ గ్రాఫైట్ వాహకం", d: "అధమ లోహ కాకపోయినా కార్బన్ రూపమైన గ్రాఫైట్ విద్యుత్‌ను బాగా ప్రసరింపజేస్తుంది.", ex: "పెన్సిల్ సీసం ద్వారా కరెంట్ పాస్ అవ్వడం." },
+      { t: "Surface Preparation for Electroplating", te: "ఎలక్ట్రోప్లేటింగ్ కోసం ఉపరితల శుద్ధి", d: "పూత పూసే వస్తువుపై జిడ్డు లేదా ధూళి లేకుండా ఆమ్లంతో కడిగి శుభ్రం చేయాలి.", ex: "తాళం చెవిని ఇసుక కాగితంతో రుద్ది శుభ్రం చేయడం." },
+      { t: "Metal Ion Migration", te: "లోహ అయాన్ల ప్రయాణం", d: "విద్యుత్ క్షేత్ర ప్రభావం వల్ల ద్రావణంలోని ధన లోహ అయాన్లు కాథోడ్ వైపు ఆకర్షించబడతాయి.", ex: "కాపర్ అయాన్లు ఇనుప కీ వైపు కదలడం." },
+      { t: "Voltage Terminology", te: "వోల్టేజ్ పదోత్పత్తి", d: "అలెగ్జాండ్రో వోల్టా గౌరవార్థం విద్యుత్ పీడన ప్రమాణానికి 'వోల్ట్' (Volt) అని పేరు పెట్టారు.", ex: "ఇళ్లలో వచ్చే 230 V కరెంట్." },
+      { t: "Biological Electricity", te: "జీవ విద్యుత్ భ్రమ", d: "గల్వానీ కప్ప కాళ్ళలో సహజంగా కరెంట్ ఉంటుందని భావించారు, కానీ వోల్టా అది లోహాల చర్య అని నిరూపించారు.", ex: "చరిత్రలో జరిగిన శాస్త్రీయ చర్చలు." },
+      { t: "Electrochemical Conversion", te: "రసాయన-విద్యుత్ మార్పిడి", d: "బ్యాటరీలలో జరిగే రసాయన చర్యల ద్వారా విద్యుత్ శక్తి ఉద్భవించడం.", ex: "మొబైల్ బ్యాటరీ పనితీరు." },
+      { t: "Copper Sulphate Color", te: "కాపర్ సల్ఫేట్ నీలి రంగు", d: "ద్రావణంలో కాపర్ అయాన్ల ఉనికి వల్ల కాపర్ సల్ఫేట్ స్పటికాలు ముదురు నీలి రంగులో ఉంటాయి.", ex: "నీలపు తుత్తాతి (Mylatuttam) నీటిలో కరగడం." },
+      { t: "Sulphuric Acid Role in Electrolyte", te: "ద్రావణంలో ఆమ్లం పాత్ర", d: "కాపర్ సల్ఫేట్ ద్రావణంలో కొన్ని చుక్కల ఆమ్లం కలపడం వల్ల అయాన్ల ప్రవాహం పెరిగి వాహకత మెరుగుపడుతుంది.", ex: "ప్రయోగంలో ఆమ్లాన్ని కలపడం." },
+      { t: "Industrial Plating Tanks", te: "పారిశ్రామిక ప్లేటింగ్ ట్యాంకులు", d: "పెద్ద పెద్ద ఫ్యాక్టరీలలో వేలాది వాహన భాగాలను నిమిషాల్లో ముంచి పూత పూసే భారీ ట్యాంకులు.", ex: "ఆటోమొబైల్ పరిశ్రమలలో క్రోమియం ప్లాంటింగ్." },
+      { t: "Bridge Corrosion Prevention", te: "వంతెనల తుప్పు నివారణ", d: "ఉక్కు వంతెనల తుప్పు పట్టే భాగాలపై జింక్ పూత పూసి దశాబ్దాల పాటు మన్నేలా చేయడం.", ex: "నదులపై కట్టే పెద్ద ఇనుప బ్రిడ్జిలు." },
+      { t: "Metal Reactivity Hierarchy", te: "లోహాల క్రియాశీలత క్రమం", d: "ఇనుము కంటే తక్కువ క్రియాశీలకం గల టిన్‌ను ఆహార డబ్బాలకు వాడటం.", ex: "క్రియాశీలత తేడాల ఆధారంగా పూతలు." },
+      { t: "Indicator Function", te: "ఇండికేటర్ పనితీరు", d: "పరికరాలు ఆన్‌లో ఉన్నాయో లేదో తెలపడానికి సూక్ష్మ విద్యుత్‌తో వెలిగే LED ల వాడకం.", ex: "ఛార్జర్ ఆన్ చేసినప్పుడు వెలిగే లైట్." },
+      { t: "Dry Cell Construction", te: "డ్రై సెల్ నిర్మాణం", d: "జింక్ గుల్ల లోపల రసాయన పేస్ట్ మరియు కార్బన్ రాడ్‌తో కూడిన సాధారణ బ్యాటరీ.", ex: "టార్చ్‌లైట్లలో వేసే సెల్." },
+      { t: "Circuit Completeness", te: "వలయ సంపూర్ణత", d: "ద్రవం లేదా వస్తువు ద్వారా విద్యుత్ ప్రవహిస్తేనే సర్క్యూట్ పూర్తయి బల్బు వెలుగుతుంది.", ex: "స్విచ్ ఆన్ చేసినప్పుడు కరెంట్ పాస్ అవ్వడం." },
+      { t: "Electric Shock Physics", te: "విద్యుత్ షాక్ వెనుక భౌతిక శాస్త్రం", d: "మానవ శరీరం 70% నీరు మరియు లవణాలతో కూడి ఉండటం వల్ల సులభంగా కరెంట్‌ను ప్రసరిస్తుంది.", ex: "తడి చేతులతో కరెంట్ వైర్ ముట్టుకుంటే షాక్ కొట్టడం." },
+      { t: "Salt Solution Ions", te: "ఉప్పు ద్రావణ అయాన్లు", d: "ఉప్పు నీటిలో కరిగినప్పుడు $Na^+$ మరియు $Cl^-$ అయాన్లుగా విడిపోయి ఛార్జ్‌ను మోస్తాయి.", ex: "ఉప్పు నీరు మంచి కండక్టర్ కావడానికి కారణం." },
+      { t: "Insulator Safety", te: "బంధకాలతో భద్రత", d: "కరెంట్ పని చేసేవారు రబ్బరు గ్లౌజులు మరియు చెక్క పీఠాలు వాడి షాక్ నుండి రక్షించుకోవడం.", ex: "ఎలక్ట్రీషియన్లు వాడే సేఫ్టీ పరికరాలు." },
+      { t: "Current Flow Direction", te: "విద్యుత్ ప్రవాహ దిశ", d: "సాంప్రదాయకంగా విద్యుత్ ధన ధృవం నుండి రుణ ధృవం వైపు ప్రవహిస్తుంది.", ex: "సర్క్యూట్ రేఖాచిత్రాలలో బాణపు గుర్తులతో చూపడం." },
+      { t: "Electrode Purity", te: "ఎలక్ట్రోడ్ శుద్ధత", d: "ఎలక్ట్రోప్లేటింగ్ సమయంలో యానోడ్ స్వచ్ఛమైన లోహంతో ఉంటేనే పూత సక్రమంగా వస్తుంది.", ex: "స్వచ్ఛమైన రాగి పలకను వాడటం." },
+      { t: "Current Stability", te: "విద్యుత్ ప్రవాహ స్థిరత్వం", d: "పూత సమానంగా మరియు నునుపుగా రావడానికి సర్క్యూట్‌లో కరెంట్ స్థిరంగా ఉండాలి.", ex: "బ్యాటరీ పవర్‌తో సమానంగా పూత పట్టడం." },
+      { t: "Rust Protection", te: "తుప్పు నుండి రక్షణ", d: "గాలిలోని ఆక్సిజన్ మరియు తేమ ఇనుముతో నేరుగా కలవకుండా పూతలు అడ్డుకుంటాయి.", ex: "గేట్లకు పెయింట్ వేయడం మరియు గాల్వనైజింగ్." },
+      { t: "Metal Adhesion", te: "లోహ బంధన పటుత్వం", d: "పూత పూసిన లోహం కింది తలానికి గట్టిగా అతుక్కునేలా ఉపరితలాన్ని గరుకుగా చేయాలి.", ex: "ఎలక్ట్రోప్లేటింగ్ ముందు తలాన్ని శుభ్రం చేయడం." },
+      { t: "Battery Capacity", te: "బ్యాటరీ సామర్థ్యం", d: "సెల్స్ ఎక్కువసేపు కరెంట్ ఇవ్వడానికి వాటిలోని రసాయనాల పరిమాణం దోహదపడుతుంది.", ex: "పెద్ద బ్యాటరీలు ఎక్కువసేపు టార్చ్ వెలిగించడం." },
+      { t: "Submerged Heater Warning", te: "వాటర్ హీటర్ హెచ్చరిక", d: "నీటిలో ఉంచే రాడ్ హీటర్లను నీటిలో నుంచి తీసేముందు స్విచ్ ఆఫ్ చేయాలని పెద్దలు చెప్పడం.", ex: "కరెంట్ షాక్ ప్రమాదాల నివారణ." },
+      { t: "Tap Water Minerals", te: "కుళాయి నీటి ఖనిజాలు", d: "శరీరానికి మంచివైన కాల్షియం, మెగ్నీషియం లవణాలు తాగునీటిలో సహజంగా ఉంటాయి.", ex: "మినరల్ వాటర్ తాగడం వల్ల ఆరోగ్య ప్రయోజనాలు." },
+      { t: "Greenish-Blue Precipitate", te: "ఆకుపచ్చ-నీలి అవక్షేపం", d: "బంగాళాదుంప ప్రయోగంలో ఏర్పడే రాగి మరియు బంగాళాదుంప రసాయనాల చర్య ఫలితం.", ex: "టెస్టర్ తీగ చుట్టూ రంగు మారడం." },
+      { t: "Frog Leg Experiment", te: "కప్ప కాళ్ళ ప్రయోగం", d: "గల్వానీ చేసిన చారిత్రక జీవ విద్యుత్ పరిశోధన.", ex: "ఎలక్ట్రోకెమిస్ట్రీకి నాంది పలికిన ప్రయోగం." },
+      { t: "Electrodes Submersion", te: "ఎలక్ట్రోడ్ల మునిగింపు", d: "ద్రావణంలో ఎలక్ట్రోడ్లు సగానికి పైగా మునిగి ఉండేలా జాగ్రత్త తీసుకోవాలి.", ex: "బీకర్‌లో పలకలను సరిగ్గా అమర్చడం." },
+      { t: "Switch Operation", te: "స్విచ్ ఆన్/ఆఫ్", d: "అవసరమైనప్పుడు సర్క్యూట్‌ను కలపడానికి మరియు విడదీయడానికి స్విచ్ వాడతారు.", ex: "కరెంట్ నియంత్రణ." },
+      { t: "Sandpaper Scraping", te: "ఇసుక కాగితంతో శుభ్రం చేయుట", d: "తీగలు మరియు పలకలపై ఉన్న ఆక్సైడ్ పొరను తొలగించడానికి శాండ్‌పేపర్ వాడతారు.", ex: "కాపర్ వైర్ శుభ్రం చేయడం." },
+      { t: "Series Cell Connection", te: "శ్రేణిలో సెల్స్ అమరిక", d: "ఒక సెల్ ధృవాన్ని మరో సెల్ రుణ ధృవానికి కలిపి ఎక్కువ వోల్టేజ్ సాధించడం.", ex: "టార్చ్ లైట్లలో రెండు బ్యాటరీలు వేయడం." },
+      { t: "Circuit Continuity", te: "సర్క్యూట్ నిరంతరత", d: "ఎక్కడైనా తీగ ఊడిపోతే లేదా ద్రవం బంధకమైతే సర్క్యూట్ తెగిపోతుంది.", ex: "బల్బ్ వెలగకపోవడానికి గల కారణం." },
+      { t: "Metal Rusting Process", te: "ఇనుము తుప్పు పట్టే ప్రక్రియ", d: "ఆక్సిజన్ మరియు నీటి సమక్షంలో ఇనుము క్షీణించి ఎర్రటి పొరగా మారడం.", ex: "వర్షాకాలంలో ఇనుప గేట్లు తుప్పు పట్టడం." },
+      { t: "Tableware Silver Coating", te: "వెండి పూత గిన్నెలు", d: "అందమైన రాగి టేబుల్ సామాన్లపై వెండిని అద్ది ఆకర్షణీయంగా మార్చడం.", ex: "అతిథులకు వడ్డించే ప్రత్యేక వెండి పూత గిన్నెలు." },
+      { t: "Vehicle Bumper Polish", te: "వాహనాల బంపర్ల మెరుపు", d: "కార్ల ముందు భాగంలో ఉండే క్రోమియం బంపర్లు ఎండకు మెరవడం.", ex: "కొత్త కార్ల వెలుగులు." },
+      { t: "Metallic Shine Preservation", te: "లోహ మెరుపు సంరక్షణ", d: "తేలికగా ఆక్సీకరణం చెందే లోహాలను పూతలతో కాపాడటం.", ex: "నగలు మరియు వస్తువుల మెరుపు తగ్గకుండా చూడటం." },
+      { t: "Solution Concentration", te: "ద్రావణ గాఢత", d: "ఎలక్ట్రోప్లేటింగ్ ట్యాంకులలో లవణాల గాఢత సరిగ్గా ఉండేలా చూడటం.", ex: "కాపర్ సల్ఫేట్ ద్రావణం తయారీ." },
+      { t: "Current Uniformity", te: "సమరూప విద్యుత్ ప్రవాహం", d: "వస్తువు అంతటా ఒకేలా పూత పట్టడానికి కరెంట్ స్థిరంగా ఉండాలి.", ex: "నాణ్యమైన ఎలక్ట్రోప్లేటింగ్." },
+      { t: "Carbon Rods in Dry Cells", te: "డ్రై సెల్‌లో కార్బన్ రాడ్", d: "బ్యాటరీ మధ్యలో ధన ధృవంగా పనిచేసే నల్లటి కార్బన్ కడ్డీ.", ex: "పాత సెల్ పగలగొడితే లోపల వచ్చే రాడ్." },
+      { t: "Zinc Casing Anode", te: "జింక్ గుల్ల పాత్ర", d: "పాత డ్రై సెల్ బయట ఉండే లోహపు కవచం జింక్‌తో తయారై ఉంటుంది.", ex: "సెల్ బయటి సిల్వర్ రంగు లోహం." },
+      { t: "Household Appliances Safety", te: "గృహోపకరణాల భద్రత", d: "కరెంట్ పరికరాలు వాడేటప్పుడు చెప్పులు వేసుకోవడం మరియు తడి లేకుండా చూసుకోవడం.", ex: "ఇళ్లలో రక్షిత జాగ్రత్తలు." },
+      { t: "Water Ionization", te: "నీటి అయానీకరణం", d: "స్వచ్ఛమైన నీటిలో అయాన్లు ఉండవు, కానీ లవణాలు కలిపితే అయాన్లు ఏర్పడతాయి.", ex: "విద్యుత్ ప్రసారానికి కావలసిన ప్రాథమిక మార్పు." },
+      { t: "Practical Electrochemistry", te: "ఆచరణాత్మక ఎలక్ట్రోకెమిస్ట్రీ", d: "శాస్త్రీయ సూత్రాలను వాణిజ్య మరియు పారిశ్రామిక అవసరాలకు మలచడం.", ex: "ఫ్యాక్టరీలలో ప్లాంటింగ్ యూనిట్లు." },
+      { t: "Scientific Inquiry Value", te: "శాస్త్రీయ విచారణ విలువ", d: "ప్రతి చిన్న అనుమానాన్ని ప్రయోగాల ద్వారా నిరూపించుకునే తత్వమే విజ్ఞాన శాస్త్రం.", ex: "ద్రవాలు కరెంట్ పాస్ చేస్తాయా లేదా అని టెస్టర్‌తో పరీక్షించడం." }
+    ];
+
+    function buildEightyPoints() {
+      const container = document.getElementById('eightyPointsContainer');
+      container.innerHTML = '';
+      masterConceptsConductivity.forEach((c, idx) => {
+        const card = document.createElement('div');
+        card.className = "concept-card bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm hover:border-sky-500 hover:shadow-md transition space-y-2.5";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="w-8 h-8 rounded-full bg-sky-600 text-white font-black flex items-center justify-center text-xs">${idx + 1}</span>
+            <button onclick="readAloud('${c.t}. ${c.te}')" title="Pronounce Point" class="text-slate-400 hover:text-sky-600 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h4 class="font-black text-sm text-slate-900">${c.t}</h4>
+          <h5 class="font-extrabold text-sm text-sky-700 telugu-font">${c.te}</h5>
+          <p class="text-xs text-slate-600 telugu-font leading-relaxed">${c.d}</p>
+          <div class="p-3 bg-sky-50/50 rounded-xl border border-sky-200 text-xs text-slate-700 telugu-font">
+            <strong class="text-sky-700 font-sans uppercase font-black">ఉదాహరణ:</strong> ${c.ex}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =====================================================================
+       3. 80 GLOSSARY TERMS WITH BILINGUAL SENTENCES
+       ===================================================================== */
+    const masterGlossaryConductivity = [
+      { w: "Conductor", te: "వాహకము", enEx: "Copper wires are excellent conductors of electrical energy.", teEx: "రాగి తీగలు విద్యుత్ శక్తిని ప్రసరింపజేసే అత్యుత్తమ వాహకాలు." },
+      { w: "Insulator", te: "బంధకము (చెడ్డ వాహకం)", enEx: "Rubber gloves act as safe insulators against electric shocks.", teEx: "రబ్బరు గ్లౌజులు విద్యుత్ షాక్‌ల నుండి రక్షించే సురక్షిత బంధకాలుగా పనిచేస్తాయి." },
+      { w: "Electrolyte", te: "విద్యుద్విశ్లేషకము", enEx: "Copper sulphate solution serves as a conducting electrolyte during plating.", teEx: "పూత పూసే సమయంలో కాపర్ సల్ఫేట్ ద్రావణం వాహక విద్యుద్విశ్లేషకంగా పనిచేస్తుంది." },
+      { w: "Electrodes", te: "ఎలక్ట్రోడ్లు", enEx: "The battery supplies current to the submerged metal electrodes.", teEx: "బ్యాటరీ ముంచిన లోహపు ఎలక్ట్రోడ్లకు విద్యుత్ ప్రవాహాన్ని అందిస్తుంది." },
+      { w: "Electrolysis", te: "విద్యుద్విశ్లేషణ", enEx: "Electrolysis drives chemical changes within conducting liquid solutions.", teEx: "విద్యుద్విశ్లేషణ ద్రావణాలలోని రసాయన మార్పులను ప్రేరేపిస్తుంది." },
+      { w: "Electroplating", te: "ఎలక్ట్రోప్లేటింగ్", enEx: "Bicycle rims undergo electroplating with chromium to prevent rusting.", teEx: "తుప్పు పట్టకుండా ఉండటానికి సైకిల్ రిమ్‌లపై క్రోమియం ఎలక్ట్రోప్లేటింగ్ చేస్తారు." },
+      { w: "Distilled water", te: "స్వేదన జలము", enEx: "Pure distilled water lacks free ions and fails to conduct electricity.", teEx: "స్వచ్ఛమైన స్వేదన జలంలో స్వేచ్ఛా అయాన్లు ఉండవు కాబట్టి విద్యుత్ ప్రవహించదు." },
+      { w: "Tap water", te: "తాగునీరు", enEx: "Tap water contains dissolved minerals that make it electrically conductive.", teEx: "తాగునీటిలో కరిగి ఉన్న ఖనిజాలు దానిని విద్యుత్ వాహకంగా మారుస్తాయి." },
+      { w: "LED indicator", te: "LED సూచిక", enEx: "An LED indicator glows even with very weak electric currents.", teEx: "చాలా బలహీనమైన కరెంట్ ఉన్నా LED ఇండికేటర్ వెలుగుతుంది." },
+      { w: "Galvanizing", te: "గాల్వనైజింగ్", enEx: "Galvanizing coats structural iron with a protective layer of zinc.", teEx: "గాల్వనైజింగ్ పద్ధతి ద్వారా నిర్మాణాల ఇనుముపై రక్షక జింక్ పూత పూస్తారు." },
+      { w: "Cathode", te: "కాథోడ్", enEx: "Metal ions migrate toward the negative cathode during electroplating.", teEx: "ఎలక్ట్రోప్లేటింగ్ సమయంలో లోహపు అయాన్లు రుణాత్మక కాథోడ్ వైపు ప్రయాణిస్తాయి." },
+      { w: "Anode", te: "యానోడ్", enEx: "The positive anode supplies replacement metal ions to the electrolyte solution.", teEx: "ధనాత్మక యానకోడ్డు ద్రావణానికి సరికొత్త లోహ అయాన్లను అందిస్తుంది." },
+      { w: "Voltaic cell", te: "వోల్టా ఘటము", enEx: "Alessandro Volta invented the first voltaic cell using copper and zinc.", teEx: "అలెగ్జాండ్రో వోల్టా రాగి మరియు జింక్を用いて మొదటి వోల్టా ఘటాన్ని కనిపెట్టారు." },
+      { w: "Dry cell", te: "డ్రై సెల్ (పొడి ఘటం)", enEx: "Torches and wall clocks operate on portable dry cells.", teEx: "టార్చ్ లైట్లు మరియు గోడ గడియారాలు పోర్టబుల్ డ్రై సెల్స్‌పై పనిచేస్తాయి." },
+      { w: "Graphite", te: "గ్రాఫైట్", enEx: "Pencil graphite conducts electricity despite being a non-metal form of carbon.", teEx: "గ్రాఫైట్ నాన్-మెటల్ అయినప్పటికీ పెన్సిల్ సీసం గుండా కరెంట్ పాస్ అవుతుంది." },
+      { w: "Copper sulphate", te: "కాపర్ సల్ఫేట్", enEx: "Copper sulphate crystals dissolve in water to form a deep blue electrolyte.", teEx: "కాపర్ సల్ఫేట్ స్పటికాలు నీటిలో కరిగి ముదురు నీలి రంగు విద్యుద్విశ్లేషకాన్ని ఇస్తాయి." },
+      { w: "Sulphuric acid", te: "సల్ఫ్యూరిక్ ఆమ్లం", enEx: "Dilute sulphuric acid increases electrolyte conductivity in voltaic cells.", teEx: "విలీన సల్ఫ్యూరిక్ ఆమ్లం వోల్టా ఘటాలలో ద్రావణ వాహకతను పెంచుతుంది." },
+      { w: "Potato test", te: "బంగాళాదుంప పరీక్ష", enEx: "Inserting live tester wires into a potato reveals greenish-blue chemical spots.", teEx: "బంగాళాదుంపలో లైవ్ టెస్టర్ తీగలు గుడితే ఆకుపచ్చని రసాయన మచ్చలు వస్తాయి." },
+      { w: "Wet hands", te: "తడి చేతులు", enEx: "Never touch electrical switches with wet hands to avoid severe shocks.", teEx: "తీవ్రమైన షాక్‌లను నివారించడానికి ఎప్పుడూ తడి చేతులతో స్విచ్‌లు ముట్టకండి." },
+      { w: "Chromium", te: "క్రోమియం", enEx: "Chromium plating gives automobile bumpers a mirror-like corrosion-resistant finish.", teEx: "క్రోమియం పూత కార్ల బంపర్లకు అద్దం లాంటి తుప్పు పట్టని మెరుపునిస్తుంది." },
+      { w: "Tin can", te: "టిన్ డబ్బా", enEx: "Processed food cans are protected internally by tin plating.", teEx: "ప్రాసెస్ చేసిన ఆహార డబ్బాలు లోపలి వైపు టిన్ పూతతో రక్షించబడతాయి." },
+      { w: "Impurities", te: "మలినాలు", enEx: "Natural water impurities allow electric current to pass through freely.", teEx: "సహజ నీటిలోని మలినాలు విద్యుత్ ప్రవాహం స్వేచ్ఛగా వెళ్ళడానికి వీలు కల్పిస్తాయి." },
+      { w: "Polarity", te: "ధృవత్వము (+ మరియు -)", enEx: "Correct polarity is essential when connecting LEDs and batteries.", teEx: "LEDలు మరియు బ్యాటరీలు కలిపేటప్పుడు సరైన ధృవత్వము చాలా ముఖ్యం." },
+      { w: "Lead wire", te: "లీడ్ తీగ (టెర్మినల్)", enEx: "The longer lead wire of an LED connects to the positive battery terminal.", teEx: "LED యొక్క పొడవైన లీడ్ తీగ బ్యాటరీ ధనాత్మక ధృవానికి కలుపబడుతుంది." },
+      { w: "Chemical energy", te: "రసాయన శక్తి", enEx: "Cells convert stored chemical energy into electrical energy.", teEx: "సెల్స్ తమలో నిల్వ ఉన్న రసాయన శక్తిని విద్యుత్ శక్తిగా మారుస్తాయి." },
+      { w: "Current intensity", te: "ప్రవాహ తీవ్రత", enEx: "Higher current intensity produces a brighter glow in tester bulbs.", teEx: "అధిక ప్రవాహ తీవ్రత టెస్టర్ బల్బును మరింత ప్రకాశవంతంగా వెలిగిస్తుంది." },
+      { w: "Sandpaper", te: "శాండ్‌పేపర్ (ఇసుక కాగితం)", enEx: "Sandpaper cleans oxide layers off metal wires before circuit connections.", teEx: "సర్క్యూట్ కనెక్షన్‌కు ముందు శాండ్‌పేపర్ తీగలపై ఆక్సైడ్ పొరను శుభ్రం చేస్తుంది." },
+      { w: "Zinc plate", te: "జింక్ పలక", enEx: "Zinc plates serve as the dissolving anode in homemade voltaic cells.", teEx: "ఇంట్లో తయారుచేసే సెల్స్‌లో జింక్ పలక కరిగే యానోడుగా పనిచేస్తుంది." },
+      { w: "Copper wire", te: "రాగి తీగ", enEx: "Thick insulated copper wires connect electrical circuit components reliably.", teEx: "మందపాటి రాగి తీగలు విద్యుత్ సర్క్యూట్ భాగాలను నమ్మకంగా కలుపుతాయి." },
+      { w: "Corrosion", te: "తుప్పు పట్టుట (క్షయము)", enEx: "Atmospheric oxygen and moisture cause rapid corrosion of iron structures.", teEx: "వాతావరణ ఆక్సిజన్ మరియు తేమ ఇనుప నిర్మాణాల వేగవంతమైన తుప్పు పట్టడానికి దారితీస్తాయి." },
+      { w: "Ornamentation", te: "అలంకరణ", enEx: "Electroplating is widely practiced for jewelry ornamentation and decorative items.", teEx: "నగల అలంకరణ మరియు అలంకార వస్తువుల కోసం ఎలక్ట్రోప్లేటింగ్ విస్తృతంగా వాడతారు." },
+      { w: "Biological electricity", te: "జీవ విద్యుత్", enEx: "Galvani initially mistook muscle nerve reactions for biological electricity.", teEx: "గల్వానీ మొదట్లో కండరాల నరాల స్పందనలను జీవ విద్యుత్‌గా పొరపడ్డారు." },
+      { w: "Dissociation", te: "అయాన్లుగా విడిపోవుట", enEx: "Salts undergo dissociation into free ions when dissolved in water.", teEx: "ఉప్పు నీటిలో కరిగినప్పుడు స్వేచ్ఛా అయాన్లుగా విడిపోతుంది (అయానికరణం చెందుతుంది)." },
+      { w: "Free ions", te: "స్వేచ్ఛా అయాన్లు", enEx: "Free ions within liquid solutions carry electrical charges across circuits.", teEx: "ద్రవ ద్రావణాలలోని స్వేచ్ఛా అయాన్లు సర్క్యూట్ గుండా విద్యుత్ ఆవేశాలను మోసుకెళ్తాయి." },
+      { w: "Circuit breaker", te: "సర్క్యూట్ బ్రేకర్", enEx: "Circuit breakers protect household appliances from dangerous power surges.", teEx: "సర్క్యూట్ బ్రేకర్లు గృహోపకరణాలను ప్రమాదకర విద్యుత్ హెచ్చుతగ్గుల నుండి కాపాడతాయి." },
+      { w: "Electric shock", te: "విద్యుత్ షాక్", enEx: "Passing current through the human body results in a painful electric shock.", teEx: "మానవ శరీరం గుండా కరెంట్ ప్రవహిస్తే బాధాకరమైన విద్యుత్ షాక్ తగులుతుంది." },
+      { w: "Immersion heater", te: "ఇమ్మర్షన్ వాటర్ హీటర్", enEx: "Never touch an operating immersion heater submerged in a bucket of water.", teEx: "నీటి బకెట్‌లో ఉంచిన వాటర్ హీటర్ ఆన్‌లో ఉన్నప్పుడు దానిని తాకకూడదు." },
+      { w: "Lemon juice", te: "నిమ్మరసము", enEx: "Citric lemon juice contains natural acid making it a good liquid conductor.", teEx: "నిమ్మరసంలో సహజ ఆమ్లం ఉండటం వల్ల అది మంచి ద్రవ వాహకం." },
+      { w: "Vinegar", te: "వెనిగర్", enEx: "Vinegar conducts electricity due to the presence of acetic acid.", teEx: "వెనిగర్‌లో ఎసిటిక్ ఆమ్లం ఉండటం వల్ల అది విద్యుత్‌ను ప్రసరింపజేస్తుంది." },
+      { w: "Sugar solution", te: "చక్కెర ద్రావణం", enEx: "Sugar solution remains a poor conductor because sugar does not form ions.", teEx: "చక్కెర అయాన్లుగా విడిపోదు కాబట్టి చక్కెర ద్రావణం చెడ్డ వాహకంగా ఉంటుంది." },
+      { w: "Coconut oil", te: "కొబ్బరి నూనె", enEx: "Pure coconut oil acts as an insulating liquid that blocks current.", teEx: "స్వచ్ఛమైన కొబ్బరి నూనె కరెంట్‌ను ఆపే బంధక ద్రవంగా పనిచేస్తుంది." },
+      { w: "Kerosene", te: "కెరోసిన్", enEx: "Kerosene petroleum distillate fails to conduct electric current.", teEx: "కెరోసిన్ పెట్రోలియం స్వేదన ద్రవం విద్యుత్‌ను ప్రసరింపజేయలేదు." },
+      { w: "Rubber cap", te: "రబ్బరు మూత", enEx: "An injection vial rubber cap holds testing liquids securely in position.", teEx: "ఇంజెక్షన్ వయల్ రబ్బరు మూత పరీక్షించే ద్రవాలను భద్రంగా ఉంచుతుంది." },
+      { w: "Metal pin", te: "లోహపు పిన్", enEx: "Two metal pins serve as probe terminals inside the liquid conductivity tester.", teEx: "రెండు లోహపు పిన్‌లు ద్రవ వాహకత టెస్టర్‌లో ప్రోబ్ టెర్మినల్స్‌గా పనిచేస్తాయి." },
+      { w: "Magnetic compass", te: "అయస్కాంత సూది", enEx: "A compass needle deflects when placed near a wire carrying electric current.", teEx: "విద్యుత్ ప్రవహించే తీగ దగ్గర ఉంచితే అయస్కాంత సూది విక్షేపం చెందుతుంది." },
+      { w: "Electric buzzer", te: "ఎలక్ట్రిక్ బజర్", enEx: "A miniature buzzer sounds an audible alert when conductivity tests succeed.", teEx: "వాహకత పరీక్ష విజయవంతమైనప్పుడు మినీ బజర్ శబ్దాన్ని చేస్తుంది." },
+      { w: "Coating thickness", te: "పూత మందం", enEx: "Longer immersion time in electroplating baths increases coating thickness.", teEx: "ఎలక్ట్రోప్లేటింగ్ ట్యాంకులో ఎక్కువసేపు ఉంచితే పూత మందం పెరుగుతుంది." },
+      { w: "Surface roughness", te: "ఉపరితల గరుకుదనం", enEx: "Slight surface roughness helps deposited metal adhere permanently during plating.", teEx: "స్వల్ప గరుకుదనం పూత పూసిన లోహం శాశ్వతంగా అతుక్కోవడానికి సహాయపడుతుంది." },
+      { w: "Greasy matter", te: "జిడ్డు పదార్థం", enEx: "Cleaning greasy matter ensures uniform metal deposition in plating vats.", teEx: "జిడ్డు పదార్థాలను తొలగించడం వల్ల ప్లేటింగ్ ట్యాంకుల్లో సమరూప పూత ఏర్పడుతుంది." },
+      { w: "Current stability", te: "విద్యుత్ ప్రవాహ స్థిరత్వం", enEx: "Steady power sources maintain current stability throughout electroplating operations.", teEx: "స్థిరమైన విద్యుత్ వనరులు ఎలక్ట్రోప్లేటింగ్ ప్రక్రియ అంతటా కరెంట్ స్థిరత్వాన్ని కాపాడుతాయి." },
+      { w: "Rust prevention", te: "తుప్పు నివారణ", enEx: "Zinc and chromium coatings offer reliable rust prevention for steel parts.", teEx: "జింక్ మరియు క్రోమియం పూతలు ఉక్కు భాగాలకు నమ్మకమైన తుప్పు నివారణను ఇస్తాయి." },
+      { w: "Base metal", te: "బేస్ మెటల్ (అడుగు లోహం)", enEx: "Inferior base metals are shielded from corrosion using superior metal coatings.", teEx: "అధమ బేస్ లోహాలు మెరుగైన లోహపు పూతల ద్వారా క్షయం నుండి రక్షించబడతాయి." },
+      { w: "Superior metal", te: "ఉన్నత లోహం", enEx: "Nickel and gold act as superior metals resistant to atmospheric oxidation.", teEx: "నికెల్ మరియు బంగారం వాతావరణ ఆక్సీకరణను ఎదుర్కొనే ఉన్నత లోహాలుగా పనిచేస్తాయి." },
+      { w: "Inferior metal", te: "సాధారణ లోహం", enEx: "Iron serves as an inferior metal prone to rapid rusting in moist air.", teEx: "ఇనుము తేమ గాలిలో త్వరగా తుప్పు పట్టే సాధారణ లోహంగా ఉంది." },
+      { w: "Battery terminal", te: "బ్యాటరీ టెర్మినల్", enEx: "Connecting wires attach firmly to positive and negative battery terminals.", teEx: "కలిపే తీగలు బ్యాటరీ యొక్క ధనాత్మక మరియు రుణాత్మక టెర్మినల్స్‌కు గట్టిగా అతుక్కుంటాయి." },
+      { w: "Chemical deposition", te: "రసాయన నిక్షేపణ", enEx: "Current flow induces chemical deposition of metal onto cathode surfaces.", teEx: "కరెంట్ ప్రవాహం కాథోడ్ ఉపరితలాలపై లోహం రసాయన నిక్షేపణ చెందడానికి కారణమవుతుంది." },
+      { w: "Greenish spot", te: "ఆకుపచ్చని మచ్చ", enEx: "The potato test generates a distinctive greenish spot at the anode wire.", teEx: "బంగాళాదుంప ప్రయోగం యానోడ్ తీగ వద్ద ప్రత్యేకమైన ఆకుపచ్చ మచ్చను సృష్టిస్తుంది." },
+      { w: "Frog leg muscle", te: "కప్ప కండర నరం", enEx: "Galvani experimented with frog leg muscles to study animal electricity.", teEx: "జంతు విద్యుత్‌ను అధ్యయనం చేయడానికి గల్వానీ కప్ప కండర నరాలతో ప్రయోగాలు చేశారు." },
+      { w: "Voltaic pile", te: "వోల్టాయిక్ పైల్ (స్తంభం)", enEx: "The voltaic pile stacked metal discs to generate reliable electrical potential.", teEx: "వోల్టాయిక్ పైల్ నమ్మకమైన విద్యుత్ పొటెన్షియల్‌ను ఉత్పత్తి చేయడానికి లోహ డిస్కులను పేర్చింది." },
+      { w: "Electrical potential", te: "విద్యుత్ పొటెన్షియల్", enEx: "Voltage represents the electrical potential difference driving current through conductors.", teEx: "వోెల్టేజ్ అనేది వాహకాల గుండా కరెంట్‌ను నడిపే విద్యుత్ పొటెన్షియల్ భేదాన్ని సూచిస్తుంది." },
+      { w: "Solution ions", te: "ద్రావణ అయాన్లు", enEx: "Dissolved solution ions constitute the charge carriers in liquid conduction.", teEx: "ద్రావణంలో కరిగిన అయాన్లు ద్రవ వాహకతలో ఆవేశ వాహకాలుగా పనిచేస్తాయి." },
+      { w: "Hydrated ions", te: "జలయూత అయాన్లు", enEx: "Ions in aqueous solutions remain surrounded by hydration shells of water molecules.", teEx: "నీటిలో ఉండే అయాన్లు నీటి అణువుల జలయూత కవచాలతో చుట్టుముట్టబడి ఉంటాయి." },
+      { w: "Metal extraction", te: "లోహ నిష్కర్షణ", enEx: "Electro-refining extracts pure metals from ores using electrolytic cells.", teEx: "ఎలక్ట్రో-రిఫైనింగ్ పద్ధతి ద్వారా విద్యుద్విశ్లేషణ ఘటాలను వాడి خام ధాతువు నుండి స్వచ్ఛమైన లోహాలు తీస్తారు." },
+      { w: "Industrial plating", te: "పారిశ్రామిక ప్లేటింగ్", enEx: "Industrial plating vats process thousands of metallic components daily.", teEx: "పారిశ్రామిక ప్లేటింగ్ ట్యాంకులు ప్రతిరోజూ వేలాది లోహ భాగాలను శుద్ధి చేస్తాయి." },
+      { w: "Decorative piece", te: "అలంకార వస్తువు", enEx: "Brass decoration pieces receive silver plating for enhanced aesthetic appeal.", teEx: "పిత్తడి అలంకార వస్తువులకు మరింత అందం కోసం వెండి పూత పూస్తారు." },
+      { w: "Automobile rim", te: "ఆటోమొబైల్ రిమ్", enEx: "Shiny automobile rims feature corrosion-proof chrome electroplating.", teEx: "మెరిసే ఆటోమొబైల్ రిమ్‌లు తుప్పు పట్టని క్రోమియం ఎలక్ట్రోప్లేటింగ్‌ను కలిగి ఉంటాయి." },
+      { w: "Bicycle clip", te: "సైకిల్ క్లిప్", enEx: "New bicycle clips shine brightly due to protective metal platings.", teEx: "కొత్త సైకిల్ క్లిప్‌లు రక్షక లోహపు పూతల వల్ల ప్రకాశవంతంగా మెరుస్తాయి." },
+      { w: "Safety pin shine", te: "సేఫ్టీ పిన్ మెరుపు", enEx: "Repeated handling eventually wears off the bright plating on safety pins.", teEx: "సేఫ్టీ పిన్‌లను పదేపదే వాడటం వల్ల వాటిపై ఉన్న మెరుస్తున్న పూత క్రమంగా అరిగిపోతుంది." },
+      { w: "Conductive spray", te: "వాహక స్ప్రే", enEx: "Non-conductive objects can be pre-treated with conductive spray before plating.", teEx: "పూత పూసే ముందు విద్యుత్ బంధక వస్తువులపై వాహక స్ప్రేను పూయవచ్చు." },
+      { w: "Current source", te: "విద్యుత్ వనరు", enEx: "A dependable current source is vital for consistent electrolytic reactions.", teEx: "క్రమబద్ధమైన విద్యుద్విశ్లేషణ చర్యలకు నమ్మకమైన విద్యుత్ వనరు చాలా ముఖ్యం." },
+      { w: "Positive terminal", te: "ధనాత్మక టెర్మినల్ (+)", enEx: "Oxidation and metal dissolution occur at the electrode connected to the positive terminal.", teEx: "ధనాత్మక టెర్మినల్‌కు కలిపిన ఎలక్ట్రోడ్ వద్ద ఆక్సీకరణం మరియు లోహ కరుగుదల జరుగుతాయి." },
+      { w: "Negative terminal", te: "రుణాత్మక టెర్మినల్ (-)", enEx: "Reduction and metal deposition take place at the negative terminal electrode.", teEx: "రుణాత్మక టెర్మినల్ ఎలక్ట్రోడ్ వద్ద క్షయకరణం మరియు లోహ నిక్షేపణ జరుగుతాయి." },
+      { w: "Conductive liquid", te: "వాహక ద్రవము", enEx: "Acidulated water acts as a highly conductive liquid in electrolysis experiments.", teEx: "ఆమ్లీకరించిన నీరు విద్యుద్విశ్లేషణ ప్రయోగాలలో అత్యంత వాహక ద్రవంగా పనిచేస్తుంది." },
+      { w: "Solution resistance", te: "ద్రావణ నిరోధకత", enEx: "Adding acid or salt reduces solution resistance, boosting current flow.", teEx: "ఆమ్లం లేదా ఉప్పు కలపడం వల్ల ద్రావణ నిరోధకత తగ్గి కరెంట్ ప్రవాహం పెరుగుతుంది." },
+      { w: "Electro-chemical energy", te: "విద్యుత్-రసాయన శక్తి", enEx: "Storage batteries interconvert electrical energy and chemical energy seamlessly.", teEx: "స్టోరేజ్ బ్యాటరీలు విద్యుత్ శక్తిని మరియు రసాయన శక్తిని సజావుగా పరస్పరం మారుస్తాయి." },
+      { w: "Practical application", te: "శాస్త్రీయ ఆచరణాత్మక అనువర్తనం", enEx: "Electroplating stands as a premier practical application of liquid conduction.", teEx: "ఎలక్ట్రోప్లేటింగ్ అనేది ద్రవ వాహకత యొక్క అత్యుత్తమ ఆచరణాత్మక అనువర్తనంగా నిలుస్తుంది." },
+      { w: "Scientific investigation", te: "శాస్త్రీయ పరిశోధన", enEx: "Systematic scientific investigation uncovers fundamental truths of electricity.", teEx: "క్రమబద్ధమైన శాస్త్రీయ పరిశోధన విద్యుత్ యొక్క ప్రాథమిక నిజాలను వెలికితీస్తుంది." },
+      { w: "Safe handling", te: "సురక్షిత నిర్వహణ", enEx: "Safe handling of electrical appliances prevents domestic hazards.", teEx: "విద్యుత్ పరికరాలను సురక్షితంగా నిర్వహించడం వల్ల గృహ ప్రమాదాలు నివారించబడతాయి." }
+    ];
+
+    function buildGlossary() {
+      const container = document.getElementById('glossaryContainer');
+      container.innerHTML = '';
+      masterGlossaryConductivity.forEach((g, idx) => {
+        const card = document.createElement('div');
+        card.className = "glossary-card bg-white p-5 rounded-3xl border-2 border-slate-200 shadow-sm hover:border-emerald-400 hover:shadow-md transition space-y-2.5";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-900 font-black flex items-center justify-center text-xs">${idx + 1}</span>
+            <button onclick="readAloud('${g.w}. ${g.te}')" title="Pronounce" class="text-slate-400 hover:text-emerald-700 text-sm">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <h4 class="font-black text-sm text-slate-900">${g.w}</h4>
+          <h5 class="font-extrabold text-sm text-emerald-700 telugu-font">${g.te}</h5>
+          <div class="p-3 bg-slate-50 rounded-xl text-xs text-slate-700 space-y-1.5 border border-slate-200 leading-relaxed">
+            <p><strong>EN:</strong> ${g.enEx}</p>
+            <p class="telugu-font text-slate-950"><strong>తెలుగు:</strong> ${g.teEx}</p>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =====================================================================
+       4. CONTENT SEARCH & FILTERING
+       ===================================================================== */
+    function filterContent() {
+      const q = document.getElementById('universalSearchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.concept-card, .glossary-card, .page-block, .exercise-item');
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function toggleLang(mode) {
+      const btnBoth = document.getElementById('btnBoth');
+      const btnEn = document.getElementById('btnEn');
+      const btnTe = document.getElementById('btnTe');
+
+      [btnBoth, btnEn, btnTe].forEach(b => {
+        b.className = "px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800";
+      });
+
+      const enElements = document.querySelectorAll('.lang-en');
+      const teElements = document.querySelectorAll('.lang-te');
+
+      if (mode === 'both') {
+        btnBoth.className = "px-3.5 py-2 rounded-xl bg-sky-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.remove('hidden'));
+        teElements.forEach(el => el.classList.remove('hidden'));
+      } else if (mode === 'en') {
+        btnEn.className = "px-3.5 py-2 rounded-xl bg-sky-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.remove('hidden'));
+        teElements.forEach(el => el.classList.add('hidden'));
+      } else if (mode === 'te') {
+        btnTe.className = "px-3.5 py-2 rounded-xl bg-sky-600 text-white shadow-xs";
+        enElements.forEach(el => el.classList.add('hidden'));
+        teElements.forEach(el => el.classList.remove('hidden'));
+      }
+    }
+
+    /* =====================================================================
+       5. AUDIO SYNTHESIS
+       ===================================================================== */
+    function readAloud(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.92;
+      utterance.pitch = 1.0;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    /* =====================================================================
+       6. SCROLL-TO-TOP & SPY
+       ===================================================================== */
+    initScrollSpy();
+    function initScrollSpy() {
+      const btn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          btn.classList.remove('translate-y-20', 'opacity-0');
+          btn.classList.add('translate-y-0', 'opacity-100');
+        } else {
+          btn.classList.add('translate-y-20', 'opacity-0');
+          btn.classList.remove('translate-y-0', 'opacity-100');
+        }
+      });
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
